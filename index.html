@@ -6,6 +6,9 @@
     <title> CodeAlphha</title>
     <script src="https://kit.fontawesome.com/326a1ae492.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Wendy+One&display=swap" rel="stylesheet">
     <style>
         body{
             margin: 0;
@@ -13,14 +16,38 @@
     </style>
 </head>
 <body>
-    <section id="landing">
-        <nav id="nav-landing">
-            <div style="display: flex; align-items: center;">
-                <img id="img-logo" src="assets/img/Logo Morado.png" alt="">
-                <input id="buscador" type="search" placeholder="Buscar...">
+    <nav id="nav-landing">
+        <div style="display: flex; align-items: center;">
+            <img id="img-logo" src="assets/img/Logo Morado.png" alt="">
+            <input id="buscador" type="search" placeholder="Buscar...">
+        </div>
+        <button id="button-iniciar-sesion">Iniciar Sesión</button>
+    </nav>
+    <section id="seccion-landing">
+        <div style="display: flex; justify-content: space-between; margin-top: 60px;">
+            <div>
+                <h3>El mejor editor en linea para crear y descubrir código front-end.</h3>
+                <p>CODEALPHA, el mejor editor de código en linea, ofrecemos el entorno de desarrollo necesario para la planificación y seguimiento de cualquier proyecto web. Si necesitas crear un sitio web, aprender, explorar, compartir tu código con otros creadores en tiempo real, con CODEALPHA lo tienes todo.</p>
             </div>
-            <button id="button-iniciar-sesion">Iniciar Sesión</button>
-        </nav>
+            <div id="contenedor-img-landing">
+                <img id="img-landing" src="assets/img/img landing.png" alt="">
+            </div>
+        </div>
+        <button id="button-registrarse">Registrarse</button>
+        <div style="display: flex; justify-content: space-evenly; margin-top: 100px;">
+            <div id="div-construir">
+                <img id="img-cubos" src="assets/img/img cubos.png" alt="">
+                <h2>Construir</h2>
+                <p>Realice trabajos de manera fácil y rápido creando proyectos  completos y disfrutando de todas nuestras funciones.</p>
+                <button class="button">Probar Editor</button>
+            </div>
+            <div id="div-compartir">
+                <img src="assets/img/img nube.png" alt="">
+                <h2>Comparte tu trabajo</h2>
+                <p>Comparte tu trabajo con tu equipo para trabajar de manera colaborativa.</p>
+                <button class="button">Explorar Proyectos</button>
+            </div>
+        </div>
     </section>
 </body>
 </html>
