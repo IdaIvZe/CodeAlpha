@@ -15,13 +15,13 @@
         }
     </style>
 </head>
-<body>
+<body id="body">
     <nav id="nav-landing">
         <div style="display: flex; align-items: center;">
             <img id="img-logo" src="assets/img/Logo Morado.png" alt="">
             <input id="buscador" type="search" placeholder="Buscar...">
         </div>
-        <button id="button-iniciar-sesion">Iniciar Sesión</button>
+        <button id="button-iniciar-sesion" style="cursor: pointer;">Iniciar Sesión</button>
     </nav>
     <section id="seccion-landing">
         <div style="display: flex; justify-content: space-between; margin-top: 60px;">
@@ -49,5 +49,75 @@
             </div>
         </div>
     </section>
+
+    <section class="Section-Login" id="login-section" style="display: none;">
+
+        <div class="Login" id="loginDiv">
+            <div class="Logo-login"><p class="p-login">CODEALPHA</p></div>
+            <div class="Login-content">
+                <div class="Buttons-login">
+                    <div class="button-1">
+                        <button class="google-btn"><img id="img-google" src="/assets/img/Logo-google.png" width="40px" height="40px"> Continuar con Google</button>
+                    </div>
+                    <div class="button-2">
+                        <button class="github-btn"><img id="img-guthub" src="/assets/img/Logo-github.png" width="40px" height="40px"> Continuar con GitHub</button>
+                    </div>
+                </div>
+                <p id="p-1">Or</p>
+                <div class="form-group" id="usuario_name">
+                    <input type="text" id="usuario" name="usuario" placeholder="Usuario">
+                </div>
+                <div class="form-group" id="usuario_email">
+                    <input type="email" id="correo" name="correo" placeholder="Correo">
+                </div>
+                <div class="form-group" id="usuario_password">
+                    <input class="input-container" type="password" id="contraseña" name="contraseña" placeholder="Contraseña">
+                </div>
+
+                <button id="btn-login" class="button-login" type="submit">Iniciar Sesión</button>
+
+                <p id="p-2">No tienes una cuenta? <a id="registro" href="#">Regístrate</a></p>
+            </div>
+        </div>
+    </section>
+
+    <section class="Section-Sign" id="sign-section" style="display: none;">
+
+        <div class="Sign" id="signDiv">
+            <div class="Logo-sign"><p class="p-sign">CODEALPHA</p></div>
+            <div class="Sign-content">
+                <div class="sign-form">
+                    <label class="sign-label" for="Usuario">Usuario</label>
+                    <input type="text" name="usuario" id="user">
+                </div>
+                <div class="sign-form">
+                    <label class="sign-label" for="Contraseña">Contraseña</label>
+                    <input type="password" name="contraseña" id="password">
+                </div>
+                <div class="sign-form">
+                    <label class="sign-label" for="Re-Contraseña">Repita contraseña</label>
+                    <input type="password" name="re-contraseña" id="password-2">
+                </div>
+                <div class="sign-form">
+                    <label class="sign-label" for="Names">Nombre y apellidos</label>
+                    <input type="text" name="names" id="names">
+                </div>
+                <div class="sign-form">
+                    <label class="sign-label" for="E-mail">Correo electrónico</label>
+                    <input type="email" name="e-mail" id="e-mail">
+                </div>
+
+                <div class="checkbox">
+                    <input type="checkbox" id="miCheckbox" name="miCheckbox">
+                    <label for="miCheckbox">He leído y acepto los <a class="terminos" href="#">términos y condiciones del servicio</a>
+                    </label>
+                </div>
+
+                <button id="btn-sign" class="button-sign" type="submit">Registrarse</button>
+            </div>
+        </div>
+    </section>
+
+    <script src="/assets/js/controlador.js"></script>
 </body>
 </html>

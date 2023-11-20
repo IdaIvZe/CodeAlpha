@@ -1,0 +1,138 @@
+/* Resetea los estilos por defecto de todas los elementos*/
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+
+body{
+    background: #454545;
+    color: #fff;
+}
+
+.container{
+    width: 100%;
+    height: 100vh;
+    padding: 20px;
+    display: flex;
+}
+
+.left, .right{
+    flex-basis: 50%;
+    padding: 10px;
+}
+
+textarea{
+    width: 100%;
+    height: 28%;
+    background: #1f1f1f;
+    color: #fff;
+    padding: 10px 20px;
+    border: 0;
+    outline: 0;
+    font-size: 18px;
+}
+
+iframe{
+    width: 100%;
+    height: 95%;
+    background: #fff;
+    border: 0;
+    outline: 0;
+}
+
+label i{
+    margin-right: 10px;
+    margin-left: 10px;
+}
+
+label{
+    display: flex;
+    align-items: center;
+    background: #000;
+    height: 30px;
+}
+
+#code-output{
+    width: 100%;
+    height: 200px;
+}
+
+.actions-editor{
+    display: flex;
+    width: 640px;
+    justify-content: space-evenly;
+}
+
+.actions-editor a{
+    text-decoration: none;    
+    color: white;
+}
+
+#nav-landing {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-image: linear-gradient(to right, #7C31E8 25%, #16C0CC);
+    height: 70px;
+    padding: 0px 12px;
+}
+
+#img-logo {
+    width: 250px;
+    margin-right: 26px;
+    cursor: pointer;
+}
+
+#Planes{
+    width: 100px;
+    height: 40px;
+    background-image: linear-gradient(45deg, #7C31E8, #BC92F9);
+    border-radius: 8px;
+    border: 0;
+    filter: drop-shadow(1px 1px 2px #bc92f9);
+    font-size: 1.3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#Guardar{
+    width: 140px;
+    height: 40px;
+    background-image: linear-gradient(45deg, #7C31E8, #BC92F9);
+    border-radius: 8px;
+    border: 0;
+    filter: drop-shadow(1px 1px 2px #bc92f9);
+    font-size: 1.3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#Ajustes{
+    width: 140px;
+    height: 40px;
+    background-image: linear-gradient(45deg, #7C31E8, #BC92F9);
+    border-radius: 8px;
+    border: 0;
+    filter: drop-shadow(1px 1px 2px #bc92f9);
+    font-size: 1.3rem;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+#icon-user{
+    width: 55px;
+    height: 40px;
+    background-image: linear-gradient(45deg, #7C31E8, #BC92F9);
+    border-radius: 8px;
+    border: 0;
+    filter: drop-shadow(1px 1px 2px #bc92f9);
+    font-size: 1.3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

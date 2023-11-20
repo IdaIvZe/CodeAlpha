@@ -16,6 +16,7 @@
     border: 0;
     filter: drop-shadow(1px 1px 2px #bc92f9);
     font-size: 1.3rem;
+    font-family: Wendy One;
 }
 
 #img-logo {
@@ -82,6 +83,8 @@
     border-radius: 8px;
     border: 0;
     font-size: 1.3rem;
+    font-family: Wendy One;
+    cursor: pointer;
 }
 
 #div-construir, #div-compartir {
@@ -133,4 +136,388 @@
     margin-left: 115px;
 }
 
+.Section-Login{
+    position: relative;
+    top: 5px;
+    background-color: rgba(0, 0, 0, 0.5);
+    width: 100%;
+    height: 1200px;
+}
 
+.Login{
+    width: 400px;
+    height: 600px;
+    left: 580px;
+    position: absolute;
+    box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.5);
+    background-color: aliceblue;
+}
+
+.Logo-login{
+    background-color: #9b6b6b;
+    width: 100%;
+    height: 94px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.p-login{
+    color: white;
+    font-size: 40px;
+    font-family: Wendy One;
+}
+/* #img-login{
+    width: 259px;
+    height: 76px;
+    position: absolute;
+    left: 70px;
+    top: 8px;
+} */
+
+.Login-content{
+    display: grid;
+    justify-content: center;
+    justify-items: center;
+}
+
+.Buttons-login{
+    display: grid;
+    justify-items: center;
+    margin-top: 10px;
+}
+
+.button-1{
+    display: grid;
+}
+
+#img-google{
+    position: relative;
+    right: 15px;
+}
+
+.google-btn{
+    background-color: black;
+    border-radius: 5px;
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    width: 320px;
+    height: 54px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.button-2{
+    display: grid;
+    width: 320px;
+    height: 54px;
+    margin-top: 10px;
+}
+
+#img-guthub{
+    position: relative;
+    right: 15px;
+}
+
+.github-btn{
+    border-radius: 5px;
+    background-color: black;
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    width: 320px;
+    height: 54px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+ .form-group {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    width: 296px;
+}
+
+.form-group label {
+    width: 70px;
+    margin-right: 10px;
+    text-align: start;
+    padding-left: 19px;
+}
+
+.form-group input {
+    flex: 1; /* Hace que el input ocupe el espacio restante */
+    border: 1.6px solid darkslategray;
+    height: 45px;
+    border-radius: 4px;
+    font-size: 20px;
+} 
+
+.button-login{
+    width: 165px;
+    height: 50px;
+    border-radius: 11px;
+    background-image: linear-gradient(45deg, #7C31E8, #16C0CC);
+    color: white;
+    margin-top: 10px;
+    font-size: 18px;
+    font-family: Wendy One;
+}
+
+input::placeholder{
+    font-size: 18px;
+    padding-left: 15px;
+    text-decoration: underline;
+}
+
+#p-1{
+    font-size: 25px;
+    font-weight: 600;
+    margin: 10px;
+}
+
+#p-2{
+    font-size: 21px;
+}
+
+#registro{
+    text-decoration: none;
+    color: #3584FB;
+}
+
+.Section-Sign{
+    position: relative;
+    top: 0px;
+    background-color: rgba(0, 0, 0, 0.5);
+    width: 100%;
+    height: 1200px;
+}
+
+.Sign{
+    width: 400px;
+    height: 665px;
+    left: 580px;
+    position: absolute;
+    box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.5);
+    background-color: aliceblue;
+}
+
+.Logo-sign{
+    background-color: #9b6b6b;
+    width: 100%;
+    height: 94px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.p-sign{
+    font-family: Wendy One;
+    font-size: 40px;
+    color: white;
+}
+/* #img-sign{
+    width: 259px;
+    height: 76px;
+    position: absolute;
+    left: 70px;
+    top: 8px;
+} */
+
+.Sign-content{
+    display: grid;
+    justify-items: center;
+    justify-content: center;
+}
+
+.Buttons-sign{
+    display: grid;
+    justify-items: center;
+    margin-top: 10px;
+}
+
+.button-1{
+    display: grid;
+}
+
+#img-google{
+    position: relative;
+    right: 15px;
+}
+
+.google-btn{
+    background-color: black;
+    border-radius: 5px;
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    width: 320px;
+    height: 54px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.button-2{
+    display: grid;
+    width: 320px;
+    height: 54px;
+    margin-top: 10px;
+}
+
+#img-guthub{
+    position: relative;
+    right: 15px;
+}
+
+.github-btn{
+    border-radius: 5px;
+    background-color: black;
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    width: 320px;
+    height: 54px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.form-group {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    width: 296px;
+}
+
+.form-group label {
+    width: 70px; /* Ancho de la etiqueta (ajusta según tus necesidades) */
+    margin-right: 10px; /* Espacio entre la etiqueta y el input (ajusta según tus necesidades) */
+    text-align: start;
+    padding-left: 19px;
+}
+
+.form-group input {
+    flex: 1; /* Hace que el input ocupe el espacio restante */
+    border: 1.6px solid darkslategray;
+    height: 45px;
+    border-radius: 4px;
+    font-size: 20px;
+} 
+
+.button-login{
+    width: 165px;
+    height: 50px;
+    border-radius: 11px;
+    background-image: linear-gradient(45deg, #7C31E8, #16C0CC);
+    color: white;
+    margin-top: 10px;
+    font-size: 18px;
+}
+
+input::placeholder{
+    font-size: 18px;
+    padding-left: 15px;
+    text-decoration: underline;
+}
+
+#p-1{
+    font-size: 25px;
+    font-weight: 600;
+    margin: 10px;
+}
+
+#p-2{
+    font-size: 21px;
+}
+
+#registro{
+    text-decoration: none;
+    color: #3584FB;
+
+}
+
+.sign-form{
+    width: 80%;
+    margin-top: 10px;
+}
+
+.sign-label{
+    font-size: 18px;
+}
+
+#user{
+    width: 100%;
+    height: 35px;
+    border: 2px solid black;
+    border-radius: 4px;
+    width: 310px;
+    height: 50.2px;
+    font-size: 18px;
+}
+
+#password{
+    width: 100%;
+    height: 35px;
+    border: 2px solid black;
+    border-radius: 4px;
+    width: 310px;
+    height: 50.2px;
+    font-size: 18px;
+}
+
+#password-2{
+    width: 100%;
+    height: 35px;
+    border: 2px solid black;
+    border-radius: 4px;
+    width: 310px;
+    height: 50.2px;
+    font-size: 18px;
+}
+
+#names{
+    width: 100%;
+    height: 35px;
+    border: 2px solid black;
+    border-radius: 4px;
+    width: 310px;
+    height: 50.2px;
+    font-size: 18px;
+}
+
+#e-mail{
+    width: 100%;
+    height: 35px;
+    border: 2px solid black;
+    border-radius: 4px;
+    width: 310px;
+    height: 50.2px;
+    font-size: 18px;
+}
+
+.checkbox{
+    margin-top: 15px;
+    font-size: 18px;
+    width: 348px;
+}
+
+.terminos{
+    color: #84B329;
+    text-decoration: none;
+}
+
+.button-sign{
+    width: 165px;
+    height: 50px;
+    border-radius: 11px;
+    background-image: linear-gradient(45deg, #7C31E8, #16C0CC);
+    color: white;
+    margin-top: 20px;
+    font-size: 18px;
+    font-family: Wendy One;
+    cursor: pointer;
+}
