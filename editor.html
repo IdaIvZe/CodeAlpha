@@ -12,41 +12,44 @@
 </head>
 
 <body>
-    <nav id="nav-landing">
-        <div style="display: flex; align-items: center;">
-            <img id="img-logo" src="assets/img/Logo Morado.png" alt="">
+    <section id="section-editor">
+        <nav id="nav-landing">
+            <div style="display: flex; align-items: center;">
+                <img id="img-logo" src="assets/img/Logo Morado.png" alt="">
+            </div>
+            <div class="actions-editor">
+                <a id="Planes" href="planes.html">Planes</a>
+                <a id="Guardar" href="#">Guardar</a>
+                <a id="Ajustes" href="#"><i class="fa-solid fa-gear"></i> Ajustes</a>
+                <a id="icon-user" href="#"><i class="fa-regular fa-user"></i></a>
+            </div>
+        </nav>
+        <div class="container">
+            <div class="left">
+                <label id="html" for="html-code"><i class="fa-solid fa-code" style="color: orange;"></i> HTML</label>
+                <textarea id="html-code" oninput="updateCode()"></textarea>
+    
+                <label id="css" for="css-code"><i class="fa-brands fa-css3" style="color: blue;"></i> CSS</label>
+                <textarea id="css-code" oninput="updateCode()"></textarea>
+    
+                <label id="js" for="js-code"><i class="fa-brands fa-js" style="color: yellow;"></i> JS</label>
+                <textarea id="js-code" oninput="updateCode()"></textarea>
+            </div>
+            <div class="right">
+                <label id="salida" for="output">OUTPUT</label>
+                <iframe id="output"></iframe>
+            </div>
         </div>
-        <div class="actions-editor">
-            <a id="Planes" href="#">Planes</a>
-            <a id="Guardar" href="#">Guardar</a>
-            <a id="Ajustes" href="#"><i class="fa-solid fa-gear"></i> Ajustes</a>
-            <a id="icon-user" href="#"><i class="fa-regular fa-user"></i></a>
+    
+        <button id="download-button" onclick="downloadCode()">Descargar</button>
+    
+        <div class="code-output-container">
+            <label id="out-code" for="code-output">Código generado:</label>
+            <textarea id="code-output" readonly></textarea>
+            <button id="copy-button" onclick="copyCode()">Copiar al portapapeles</button>
         </div>
-    </nav>
-    <div class="container">
-        <div class="left">
-            <label for="html-code"><i class="fa-solid fa-code" style="color: orange;"></i> HTML</label>
-            <textarea id="html-code" oninput="updateCode()"></textarea>
-
-            <label for="css-code"><i class="fa-brands fa-css3" style="color: blue;"></i> CSS</label>
-            <textarea id="css-code" oninput="updateCode()"></textarea>
-
-            <label for="js-code"><i class="fa-brands fa-js" style="color: yellow;"></i> JS</label>
-            <textarea id="js-code" oninput="updateCode()"></textarea>
-        </div>
-        <div class="right">
-            <label for="output">OUTPUT</label>
-            <iframe id="output"></iframe>
-        </div>
-    </div>
-
-    <button id="download-button" onclick="downloadCode()">Descargar</button>
-
-    <div class="code-output-container">
-        <label for="code-output">Código generado:</label>
-        <textarea id="code-output" readonly></textarea>
-        <button id="copy-button" onclick="copyCode()">Copiar al portapapeles</button>
-    </div>
+    </section>
+    
 
     
     <script src="https://kit.fontawesome.com/826eea4132.js" crossorigin="anonymous"></script>

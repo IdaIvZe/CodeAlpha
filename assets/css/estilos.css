@@ -47,7 +47,35 @@ label i{
     margin-left: 10px;
 }
 
-label{
+#html{
+    display: flex;
+    align-items: center;
+    background: #000;
+    height: 30px;
+}
+
+#css{
+    display: flex;
+    align-items: center;
+    background: #000;
+    height: 30px;
+}
+
+#js{
+    display: flex;
+    align-items: center;
+    background: #000;
+    height: 30px;
+}
+
+#salida{
+    display: flex;
+    align-items: center;
+    background: #000;
+    height: 30px;
+}
+
+#out-code{
     display: flex;
     align-items: center;
     background: #000;
