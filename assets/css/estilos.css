@@ -89,7 +89,7 @@ label i{
 
 .actions-editor{
     display: flex;
-    width: 640px;
+    width: 400px;
     justify-content: space-evenly;
 }
 
@@ -117,49 +117,53 @@ label i{
     width: 100px;
     height: 40px;
     background-image: linear-gradient(45deg, #7C31E8, #BC92F9);
+    color: #d9d9d9;
     border-radius: 8px;
     border: 0;
     filter: drop-shadow(1px 1px 2px #bc92f9);
-    font-size: 1.3rem;
+    font-size: 1.2rem;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
 #Guardar{
-    width: 140px;
+    width: 100px;
     height: 40px;
     background-image: linear-gradient(45deg, #7C31E8, #BC92F9);
+    color: #d9d9d9;
     border-radius: 8px;
     border: 0;
     filter: drop-shadow(1px 1px 2px #bc92f9);
-    font-size: 1.3rem;
+    font-size: 1.2rem;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
 #Ajustes{
-    width: 140px;
+    width: 100px;
     height: 40px;
     background-image: linear-gradient(45deg, #7C31E8, #BC92F9);
+    color: #d9d9d9;
     border-radius: 8px;
     border: 0;
     filter: drop-shadow(1px 1px 2px #bc92f9);
-    font-size: 1.3rem;
+    font-size: 1.2rem;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
 }
 
 #icon-user{
-    width: 55px;
+    width: 40px;
     height: 40px;
     background-image: linear-gradient(45deg, #7C31E8, #BC92F9);
+    color: #d9d9d9;
     border-radius: 8px;
     border: 0;
     filter: drop-shadow(1px 1px 2px #bc92f9);
-    font-size: 1.3rem;
+    font-size: 1.2rem;
     display: flex;
     justify-content: center;
     align-items: center;
