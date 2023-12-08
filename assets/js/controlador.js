@@ -36,6 +36,16 @@ document.getElementById('logueo').addEventListener('click', () =>{
     body.style.overflow = 'hidden';
 });
 
+document.getElementById('button-pro').addEventListener('click', () => {
+    const mostrarComprarPlanes = document.getElementById('seccion-comprar-plan');
+    const seccionPlanes = document.getElementById('seccion-planes');
+    const body = document.getElementById('body');
+
+    mostrarComprarPlanes.style.display = 'block';
+    seccionPlanes.style.display = 'none';
+    body.style.overflow = 'hidden';
+})
+
 // document.getElementById('opciones-guardar').addEventListener('click', () => {
 //     const mostrarSeccionOpcionesGuardar = document.getElementById('seccion-opciones-guardar');
 
