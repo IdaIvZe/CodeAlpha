@@ -168,3 +168,9 @@ label i{
     justify-content: center;
     align-items: center;
 }
+
+#html-code, #css-code, #js-code {
+    /* font-family: inconsolata; */
+    font-family: inherit;
+    font-size: inherit;
+}

@@ -36,6 +36,25 @@ document.getElementById('logueo').addEventListener('click', () =>{
     body.style.overflow = 'hidden';
 });
 
+// document.getElementById('opciones-guardar').addEventListener('click', () => {
+//     const mostrarSeccionOpcionesGuardar = document.getElementById('seccion-opciones-guardar');
+
+//     mostrarSeccionOpcionesGuardar.style.display = 'block';
+// })
+
+const ocultarSecciones = () => {
+    document.getElementById('seccion-opciones-guardar').style.display = 'none';
+}
+
+const mostrarOpcionesGuardar = () => {
+    ocultarSecciones();
+    document.getElementById('opciones-guardar').style.display = 'block';
+}
+
+
+
+
+
 
 // document.getElementById('btn-login').addEventListener('click', function(event) {
 //     // Obtener los valores de los campos de usuario y contraseña

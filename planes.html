@@ -22,9 +22,18 @@
         <nav id="nav-landing">
             <div style="display: flex; align-items: center;">
                 <img id="img-logo" src="assets/img/Logo Morado.png" alt="">
-                <input id="buscador" type="search" placeholder="Buscar...">
+                <!-- <input id="buscador" class="buscador" type="search" placeholder="Buscar..."> -->
             </div>
             <div>
+                <button id="button-planes" class="buttons-nabvar-planes">
+                    <span>Planes</span>
+                </button>
+                <button id="button-guardar" class="buttons-nabvar-planes">
+                    <span>Guardar</span>
+                </button>
+                <button id="opciones-guardar" class="buttons-nabvar-planes" onclick="mostrarOpcionesGuardar()">
+                    <span><i class="fa-solid fa-angle-down"></i></span>
+                </button>
                 <button id="button-ajustes" class="buttons-nabvar-planes">
                     <i class="fa-solid fa-gear"></i>
                     <span>Ajustes</span>
@@ -101,7 +110,19 @@
             
 
         </div>
+
+        <section id="seccion-opciones-guardar">
+            <div class="menu-guardar">Privado</div>
+            <div class="menu-guardar">Público</div>
+            <div class="menu-guardar">Descargar</div>
+        </section>
+
     </section>
+
+
+
+
     <script src="/assets/js/controlador.js"></script>
+
 </body>
 </html>

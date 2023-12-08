@@ -24,12 +24,12 @@
     margin-right: 26px;
 }
 
-#buscador {
+.buscador {
     width: 600px;
     height: 32px;
     border-radius: 7px;
     border: 0;
-    padding-left: 10px;
+    /* padding-left: 10px; */
     background-color: #d9d9d9;
     color: #000;
 }
@@ -82,7 +82,7 @@
     border-radius: 8px;
     border: 0;
     font-size: 1.3rem;
-    font-family: Wendy One;
+    /* font-family: Wendy One; */
     cursor: pointer;
 }
 
@@ -134,6 +134,11 @@
     width: max-content;
     margin-left: 115px;
 }
+
+/* input::placeholder {
+    text-decoration: none;
+    font-size: 0.3rem;
+} */
 
 /*
 Fin de estilos sección landing
@@ -254,9 +259,40 @@ Estilos sección planes
     width: 40px;
 }
 
+#opciones-guardar {
+    width: 28px;
+    border-radius: 0px 8px 8px 0px;
+    margin-left: 0px;
+}
+
+#button-guardar {
+    border-radius: 8px 0px 0px 8px;
+    margin-right: 0px;
+}
+
+#seccion-opciones-guardar {
+    position: fixed;
+    width: 80px;
+    height: 80px;
+    background-color: #5A5F73;
+    color: #fff;
+    font-family: system-ui;
+    margin-left: 86.5%;
+    margin-top: -605px;
+    border-radius: 5px;
+    padding-left: 6px;
+    padding-top: 5px;
+    display: none;
+}
+
+.menu-guardar {
+    margin-top: 1px;
+    margin-bottom: 1px;
+}
 
 
 
+/* fin estilos de la seccion planes */
 .Section-Login{
     position: relative;
     top: 75px;
@@ -275,7 +311,10 @@ Estilos sección planes
 }
 
 .Logo-login{
-    background-color: #9b6b6b;
+    /* background-color: #9b6b6b; */
+    /* background-image: linear-gradient(45deg,#3fce7f, #13bff4); */
+    background-image: linear-gradient(45deg, #7C31E8, #16C0CC);
+    /* background-color: #77c700; */
     width: 100%;
     height: 94px;
     display: flex;
@@ -391,6 +430,11 @@ Estilos sección planes
     left: 22%;
 }
 
+#btn-login {
+    font-family: system-ui;
+    border: 0;
+}
+
 input::placeholder{
     font-size: 18px;
     padding-left: 15px;
@@ -430,7 +474,7 @@ input::placeholder{
 }
 
 .Logo-sign{
-    background-color: #9b6b6b;
+    background-image: linear-gradient(45deg, #7C31E8, #16C0CC);
     width: 100%;
     height: 94px;
     display: flex;
@@ -667,4 +711,8 @@ input::placeholder{
     text-align: center;
     position: relative;
     bottom: 10px;
+}
+
+.classPrueba {
+    font-family: cascadia;
 }
