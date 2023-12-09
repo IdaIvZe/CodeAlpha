@@ -39,7 +39,7 @@ export const getProjectsById = async (req: Request, res: Response) => {
 
 // (controlador de proyetos) obtener contenido de todos los archivos de un proyecto en particular
 export const obtenerContenidoFiles = async (req: Request, res: Response) => {
-    const fileId = req.params.id;
+    const projectId = req.params.id;
     const cruceProjectsFiles = await ProjectSchema.aggregate(
             [
                 {
@@ -52,7 +52,7 @@ export const obtenerContenidoFiles = async (req: Request, res: Response) => {
                 },
                 {
                     $match: {
-                        _id: new mongoose.Types.ObjectId(fileId)
+                        _id: new mongoose.Types.ObjectId(projectId)
                     }
                 },
             ]
