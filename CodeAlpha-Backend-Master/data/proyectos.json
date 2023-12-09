@@ -1,0 +1,31 @@
+[
+    {
+        "_id": {
+            "$oid": "6573cce0a0f05b898e7d158e"
+          },
+        "name": "Proyecto Uno de Batman",
+        "description": "Descripción del Proyecto de Batman",
+        "userId": {
+            "$oid": "6572cbe2a0f05b898e7d158a"
+          },
+        "createdAt": "2023-01-01T12:00:00Z",
+        "updatedAt": "2023-01-01T12:30:00Z",
+        "files": [
+            {
+                "_id": {
+                    "$oid": "6573cdfda0f05b898e7d1592"
+                  }
+            },
+            {
+                "_id": {
+                    "$oid": "6573cdfda0f05b898e7d1593"
+                  }
+            },
+            {
+                "_id": {
+                    "$oid": "6573cdfda0f05b898e7d1594"
+                  }
+            }
+        ]
+    }    
+]

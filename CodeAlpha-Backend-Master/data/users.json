@@ -1,0 +1,40 @@
+[{
+    "name": "batman",
+    "email": "batman@gmail.com",
+    "password": "asd.456",
+    "confirmPassword": "asd.456",
+    "plan": {
+        "free": true,
+        "pro": false,
+        "enterprise": false
+    },
+    "nombres": "bruce wayne",
+    "registrado": true
+},
+{
+    "name": "superman",
+    "email": "superman@gmail.com",
+    "password": "atm.123",
+    "confirmPassword": "atm.123",
+    "plan": {
+        "free": false,
+        "pro": true,
+        "enterprise": false
+    },
+    "nombres": "clark kent",
+    "registrado": true
+},
+{
+    "name": "spiderman",
+    "email": "spiderman@gmail.com",
+    "password": "fgh.789",
+    "confirmPassword": "fgh.789",
+    "plan": {
+        "free": false,
+        "pro": false,
+        "enterprise": true
+    },
+    "nombres": "peter parker",
+    "registrado": true
+}
+]
