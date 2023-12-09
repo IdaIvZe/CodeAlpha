@@ -1,25 +1,11 @@
-document.getElementById('button-iniciar-sesion').addEventListener('click', () => {
+document.getElementById('button-iniciar-sesion').addEventListener('click', () =>{
     const mostrarLogin = document.getElementById('login-section');
     const body = document.getElementById('body');
 
-    if (mostrarLogin.style.display == 'none') {
-        mostrarLogin.style.display = 'block'
-      } else {
-        mostrarLogin.style.display = 'none'
-    }
-
+    mostrarLogin.style.display = 'block';
     body.style.overflow = 'hidden';
 });
-
-// document.getElementById('button-iniciar-sesion').addEventListener('click', () =>{
-//     const mostrarLogin = document.getElementById('login-section');
-//     const body = document.getElementById('body');
-
-//     mostrarLogin.style.display = 'block';
-//     body.style.overflow = 'hidden';
-// });
-
-// Al dar click en el boton registrarse muestra la seccion de registro
+//Al dar click en el boton registrarse muestra la seccion de registro
 document.getElementById('button-registrarse').addEventListener('click', () =>{
     const mostrarSign = document.getElementById('sign-section');
     const Login = document.getElementById('login-section');
@@ -50,24 +36,57 @@ document.getElementById('logueo').addEventListener('click', () =>{
     body.style.overflow = 'hidden';
 });
 
-// document.getElementById('btn-login').addEventListener('click', function(event) {
-//     // Obtener los valores de los campos de usuario y contraseña
-//     var usuario = document.getElementById('usuario').value;
-//     var contraseña = document.getElementById('contraseña').value;
+function enviarDatos(event) {
+    event.preventDefault(); // Evita que el formulario se envíe automáticamente
 
-//     // Verificar si los campos están vacíos
-//     if (usuario.trim() === '' || contraseña.trim() === '') {
-//         // Evitar la acción predeterminada del botón (redirección)
-//         event.preventDefault();
-//         // Mostrar un mensaje de error o realizar alguna otra acción
-//         console.log('Por favor, completa todos los campos.');
-//     } else {
-//         // Redirigir si los campos están completos
-//         window.location.href = 'editor.html';
-//     }
-// });
+    const usuario = document.getElementById('user').value;
+    const email = document.getElementById('e-mail').value;
+    const password = document.getElementById('password').value;
+    const confirmPassword = document.getElementById('password-2').value;
+    const nombres = document.getElementById('names').value;
+    
 
+    const datosFormulario = {
+        name: usuario,
+        email: email,
+        password: password,
+        confirmPassword: confirmPassword,
+        nombres: nombres
+    }
 
-// document.getElementById('btn-sign').addEventListener('click', function() {
-//     window.location.href = 'editor.html';
-// });
+    console.log(datosFormulario);
+
+    // Realizar una solicitud POST a la URL deseada
+    const registroUsuario = async () => {
+
+    const cargarRegistroUsuario = await fetch('http://localhost:3000/users/sign', {
+        method: 'POST',
+        headers: {
+            'Content-Type': 'application/json'
+        },
+        body: JSON.stringify(datosFormulario)
+    });
+
+    response = await cargarRegistroUsuario.json();
+    const usuariosLogueados = [response.usuario_sign];
+
+    console.log("usuarios logueados: ", usuariosLogueados);
+
+    let usuarioRegistrado = false;
+            usuariosLogueados.forEach(usuario_sign => {
+                if (usuario_sign.registrado) {
+                    usuarioRegistrado = true;
+                    console.log('El usuario ya está registrado');
+                    // Aquí podrías mostrar un mensaje al usuario indicando que ya está registrado
+                }
+            });
+
+            // Si ningún usuario está registrado, redirigir a los planes
+            if (!usuarioRegistrado) {
+                console.log('Ningún usuario está registrado, redirigiendo al editor');
+                window.location.href = 'planes.html';
+            }
+    }
+
+    registroUsuario();
+}

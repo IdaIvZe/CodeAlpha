@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Editor de Código en Línea</title>
     <link rel="stylesheet" href="/assets/css/estilos.css">
-    <link rel="stylesheet" href="/assets/css/style.css">
+    <link rel="stylesheet" href="/assets/css/style-editor.css">
     <script src="/assets/js/main.js" defer></script>
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -19,8 +19,11 @@
     <section id="section-editor">
         <nav id="nav-landing">
             <div style="display: flex; align-items: center;">
-                <img id="img-logo" src="assets/img/Logo Morado.png" alt="">
-                <!-- <input id="buscador" class="buscador" type="search" placeholder="Buscar..."> -->
+                <img style="width: 81px;" id="img-logo" src="assets/img/Logo_alpha.jpg" alt="logo-code-aplha">
+                <div style="position: relative; top: 6px;">
+                    <input id="buscador" class="buscador-editor" type="text" placeholder="Ingrese el nombre">
+                    <div style="font-size: 15px;"><span>Usuario</span></div>
+                </div>
             </div>
             <div>
                 <button id="button-planes" class="buttons-nabvar-planes" type="submit">
@@ -32,7 +35,7 @@
                 <button id="opciones-guardar" class="buttons-nabvar-planes" type="submit">
                     <span><i class="fa-solid fa-angle-down"></i></span>
                 </button>
-                <button id="button-ajustes" class="buttons-nabvar-planes" type="submit">
+                <button id="button-ajustes-editor" class="buttons-nabvar-planes" type="submit">
                     <i class="fa-solid fa-gear"></i>
                     <span>Ajustes</span>
                 </button>
@@ -80,7 +83,177 @@
         </div>
     </section>
     
+    <section id="seccion-opciones-ajustes-editor" style="display: none;">
+        <div class="div-opciones-ajustes">
+            <i class="fa-solid fa-share-nodes" style="color: greenyellow;"></i>
+            <span class="span-opciones-ajustes">Compartir</span>
+        </div>
+        <div class="div-opciones-ajustes">
+            <i class="fa-solid fa-user-plus" style="color: lightskyblue;"></i>
+            <span class="span-opciones-ajustes">Agregar colaboradores</span>
+        </div>
+        <div class="div-opciones-ajustes">
+            <i class="fa-solid fa-pen-to-square" style="color: darkorange;"></i>
+            <span class="span-opciones-ajustes">Cambiar nombre</span>
+        </div>
+        <div class="div-opciones-ajustes">
+            <i class="fa-solid fa-clipboard-list" style="color: aquamarine;"></i>
+            <span class="span-opciones-ajustes">Agregar descripción</span>
+        </div>
+        <div class="div-opciones-ajustes">
+            <i class="fa-solid fa-lock" style="color: gold;"></i>
+            <span class="span-opciones-ajustes">Privacidad</span>
+        </div>
+        <div class="div-opciones-ajustes">
+            <i class="fa-solid fa-heart" style="color: chartreuse;"></i>
+            <span class="span-opciones-ajustes">Agregar a favoritos</span>
+        </div>
+        <div class="div-opciones-ajustes">
+            <i class="fa-solid fa-language" style="color: darksalmon;"></i>
+            <span class="span-opciones-ajustes">Agregar lenguajes</span>
+        </div>
+    </section>
 
+    <section id="seccion-opciones-guardar-editor" style="display: none;">
+        <div class="menu-guardar">
+            <span>Privado</span>
+            <i class="fa-solid fa-toggle-off" style="    font-size: 1.5rem; color: darkgray; margin-left: 6px;"></i>
+        </div>
+        <div class="menu-guardar">
+            <span>Público</span>
+            <i class="fa-solid fa-toggle-on" style="    font-size: 1.5rem; color: lightgreen; margin-left: 6px;"></i>
+        </div>
+        <div class="menu-guardar">
+            <span>Descargar</span>
+        </div>
+    </section>
+
+    <section id="seccion-menu-usuario-editor" style="display: none;">
+        <div class="div-menu-usuario">
+            <i class="fa-regular fa-square-plus"></i>
+            <span class="span-menu-usuario">Nuevo Proyecto</span>
+        </div>
+        <div class="div-menu-usuario">
+            <i class="fa-solid fa-folder-plus"></i>
+            <span class="span-menu-usuario">Nueva Carpeta</span>
+        </div>
+        <div class="div-menu-usuario">
+            <i class="fa-solid fa-briefcase" style="color: aquamarine;"></i>
+            <span class="span-menu-usuario">Mis proyectos</span>
+        </div>
+        <div class="div-menu-usuario">
+            <i class="fa-solid fa-folder" style="color: gold;"></i>
+            <span class="span-menu-usuario">Mis carpetas</span>
+        </div>
+        <div class="div-menu-usuario">
+            <i class="fa-solid fa-user-group" style="color: aqua;"></i>
+            <span class="span-menu-usuario">Compartidos conmigo</span>
+        </div>
+        <div class="div-menu-usuario">
+            <i class="fa-solid fa-pen-nib" style="color: gold;"></i>
+            <span class="span-menu-usuario">Actualizar plan</span>
+        </div>
+        <div class="div-menu-usuario">
+            <i class="fa-solid fa-gear" style="color: darkorange;"></i>
+            <span class="span-menu-usuario">Configuraciones</span>
+        </div>
+        <div class="div-menu-usuario">
+            <i class="fa-solid fa-user" style="color: palegreen;"></i>
+            <span class="span-menu-usuario">Perfil</span>
+        </div>
+        <div class="div-menu-usuario">
+            <i class="fa-solid fa-arrow-right-from-bracket" style="color: lightsteelblue;"></i>
+            <span class="span-menu-usuario">Salir</span>
+        </div>
+    </section>
+
+    <section id="seccion-compartir" class="Section-Sign" style="display: none;">
+        
+        <div id="contenedor-compartir">
+            <div style="display: flex; justify-content: space-between;">
+                <span style="font-size: 1.2rem;">Compartir "Proyecto POO"</span>
+                <div>
+                    <i class="fa-solid fa-rectangle-xmark" style="font-size: 1.5rem; color: #ff0000de;"></i>
+                </div>
+            </div>
+
+            <div>
+                <input type="email" placeholder="Agregar personas" name="" id="email-compartir">
+            </div>
+
+            <div style="margin-bottom: 20px;">
+                <span>Personas que tienen acceso</span>
+            </div>
+
+            <div style="display: flex; justify-content: space-between;">
+                <div style="display: flex; justify-content: space-between;">
+                    <div>
+                        <img src="assets/img/sasuke.jpg" alt="" style="width: 50px; border-radius: 100%;">
+                    </div>
+                    <div style="margin-left: 10px;">
+                        <div>Sasuke (tú)</div>
+                        <div style="color: #8a8a8a; font-size: 0.9rem;">sasuke@gmail.com</div>
+                    </div>
+                </div>
+                <div style="color: #8a8a8a; font-size: 0.9rem;">
+                    Propietario
+                </div>
+            </div>
+
+            <div style="margin-top: 20px; display: flex; justify-content: space-between;">
+                <button id="button-copiar-vinculo">
+                    <i class="fa-solid fa-link"></i>
+                    <span>Copiar vínculo</span>
+                </button>
+                <button id="button-listo">Listo</button>
+            </div>
+        </div>
+
+    </section>
+
+    <section id="seccion-agregar-colaboradores" class="Section-Sign" style="display: none;">
+        
+        <div id="contenedor-agregar-colaboradores">
+            <div style="display: flex; justify-content: space-between;">
+                <span style="font-size: 1.2rem;">Agregar colaboradores a "Proyecto POO"</span>
+                <div>
+                    <i class="fa-solid fa-rectangle-xmark" style="font-size: 1.5rem; color: #ff0000de;"></i>
+                </div>
+            </div>
+
+            <div>
+                <input type="email" placeholder="Agregar colaboradores" name="" id="email-colaboradores">
+            </div>
+
+            <div style="margin-bottom: 20px;">
+                <span>Colaboradores</span>
+            </div>
+
+            <div style="display: flex; justify-content: space-between;">
+                <div style="display: flex; justify-content: space-between;">
+                    <div>
+                        <img src="assets/img/sasuke.jpg" alt="" style="width: 50px; border-radius: 100%;">
+                    </div>
+                    <div style="margin-left: 10px;">
+                        <div>Sasuke (tú)</div>
+                        <div style="color: #8a8a8a; font-size: 0.9rem;">sasuke@gmail.com</div>
+                    </div>
+                </div>
+                <div style="color: #8a8a8a; font-size: 0.9rem;">
+                    Propietario
+                </div>
+            </div>
+
+            <div style="margin-top: 20px; display: flex; justify-content: space-between;">
+                <button id="copiar-vinculo-colaboradores">
+                    <i class="fa-solid fa-link"></i>
+                    <span>Copiar vínculo</span>
+                </button>
+                <button id="button-agregar">Agregar</button>
+            </div>
+        </div>
+
+    </section>
     
     <script src="https://kit.fontawesome.com/826eea4132.js" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
@@ -88,7 +261,7 @@
         hljs.highlightAll();
     </script>
 
-    <script src="/assets/js/controller.js"></script>
+    <script src="assets/js/controller2.js"></script>
 </body>
 
 </html>
