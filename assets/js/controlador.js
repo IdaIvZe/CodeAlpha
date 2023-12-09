@@ -36,7 +36,7 @@ document.getElementById('logueo').addEventListener('click', () =>{
     body.style.overflow = 'hidden';
 });
 
-function enviarDatos(event) {
+function enviarDatosSign(event) {
     event.preventDefault(); // Evita que el formulario se envíe automáticamente
 
     const usuario = document.getElementById('user').value;
@@ -77,7 +77,6 @@ function enviarDatos(event) {
                 if (usuario_sign.registrado) {
                     usuarioRegistrado = true;
                     console.log('El usuario ya está registrado');
-                    // Aquí podrías mostrar un mensaje al usuario indicando que ya está registrado
                 }
             });
 
@@ -89,4 +88,57 @@ function enviarDatos(event) {
     }
 
     registroUsuario();
+}
+
+
+function enviarDatosLogin(event) {
+    event.preventDefault(); // Evita que el formulario se envíe automáticamente
+
+    const usuario = document.getElementById('usuario').value;
+    const email = document.getElementById('correo').value;
+    const password = document.getElementById('contraseña').value;
+    
+
+    const datosFormularioLogin = {
+        name: usuario,
+        email: email,
+        password: password
+    }
+
+    console.log(datosFormularioLogin);
+
+    // Realizar una solicitud POST a la URL deseada
+    const loginUsuario = async () => {
+
+    const cargarLoginUsuario = await fetch('http://localhost:3000/users/login', {
+        method: 'POST',
+        headers: {
+            'Content-Type': 'application/json'
+        },
+        body: JSON.stringify(datosFormularioLogin)
+    });
+
+    response = await cargarLoginUsuario.json();
+    const usuariosLogueados = [response.usuario_login];
+
+    console.log("usuarios logueados: ", usuariosLogueados);
+
+    let usuarioRegistrado = false;
+            usuariosLogueados.forEach(usuario_login => {
+                if (usuario_login.registrado === false) {
+                    console.log('El usuario no está registrado');
+                } else{
+                    usuarioRegistrado = true;
+                    console.log("Usuario encontrado");
+                }
+            });
+
+            // Si ningún usuario está registrado, redirigir a los planes
+            if (usuarioRegistrado) {
+                console.log('Redirigiendo al editor');
+                window.location.href = 'editor.html';
+            }
+    }
+
+    loginUsuario();
 }

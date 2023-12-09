@@ -265,6 +265,7 @@ Estilos sección planes
     color: #d9d9d9;
     border: 0px;
     margin-left: 10px;
+    cursor: pointer;
 }
 
 #button-perfil {
