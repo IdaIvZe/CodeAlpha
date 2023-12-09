@@ -282,7 +282,7 @@ Estilos sección planes
     margin-right: 0px;
 }
 
-#seccion-opciones-guardar {
+/* #seccion-opciones-guardar {
     position: fixed;
     width: 100px;
     height: 80px;
@@ -295,7 +295,7 @@ Estilos sección planes
     padding-left: 6px;
     padding-top: 5px;
     display: none;
-}
+} */
 
 #seccion-opciones-guardar-editor {
     position: fixed;
@@ -304,7 +304,7 @@ Estilos sección planes
     background-color: #5A5F73;
     color: #fff;
     font-family: system-ui;
-    margin-left: 81.5%;
+    margin-left: 87%;
     margin-top: -1025px;
     border-radius: 0px 10px 10px 10px;
     padding-left: 6px;
@@ -312,7 +312,7 @@ Estilos sección planes
     display: none;
 }
 
-#seccion-menu-usuario {
+/* #seccion-menu-usuario {
     position: fixed;
     width: 200px;
     height: 280px;
@@ -323,23 +323,23 @@ Estilos sección planes
     font-family: system-ui;
     margin-left: 83.5%;
     margin-top: -605px;
-}
+} */
 
 #seccion-menu-usuario-editor {
     position: fixed;
-    width: 200px;
-    height: 280px;
+    width: 214px;
+    height: 311px;
     padding: 10px;
     border-radius: 15px 0px 15px 15px;
     background-color: #5A5F73;
     color: #fff;
     font-family: system-ui;
-    margin-left: 85.89%;
+    margin-left: 84%;
     margin-top: -1025px;
 }
 
 
-#seccion-opciones-ajustes {
+/* #seccion-opciones-ajustes {
     position: fixed;
     width: 200px;
     height: 215px;
@@ -350,19 +350,20 @@ Estilos sección planes
     font-family: system-ui;
     margin-left: 78%;
     margin-top: -605px;
-}
+} */
 
 #seccion-opciones-ajustes-editor {
     position: fixed;
-    width: 200px;
+    width: 222px;
     height: 215px;
     padding: 10px;
     border-radius: 15px 0px 15px 15px;
     background-color: #5A5F73;
     color: #fff;
     font-family: system-ui;
-    margin-left: 82.4%;
-    margin-top: -1025px;
+    margin-left: 78%;
+    margin-top: -1021px;
+    cursor: pointer;
 }
 
 #contenedor-compartir, #contenedor-agregar-colaboradores {
