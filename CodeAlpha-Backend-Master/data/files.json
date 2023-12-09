@@ -1,0 +1,41 @@
+[
+    {
+        "_id": {
+            "$oid": "6573cdfda0f05b898e7d1592"
+          },
+        "name": "Archivo HTML",
+        "content": "<html>Contenido HTML</html>",
+        "type": "html",
+        "projectId": {
+            "$oid": "6573cce0a0f05b898e7d158e"
+          },
+        "createdAt": "2023-01-01T12:10:00Z",
+        "updatedAt": "2023-01-01T12:20:00Z"
+    },
+    {
+        "_id": {
+            "$oid": "6573cdfda0f05b898e7d1593"
+          },
+        "name": "Archivo CSS",
+        "content": "body { background-color: #fff; }",
+        "type": "css",
+        "projectId": {
+            "$oid": "6573cce0a0f05b898e7d158e"
+          },
+        "createdAt": "2023-01-01T12:15:00Z",
+        "updatedAt": "2023-01-01T12:25:00Z"
+    },
+    {
+        "_id": {
+            "$oid": "6573cdfda0f05b898e7d1594"
+          },
+        "name": "Archivo JS",
+        "content": "console.log('Hola, mundo!');",
+        "type": "js",
+        "projectId": {
+            "$oid": "6573cce0a0f05b898e7d158e"
+          },
+        "createdAt": "2023-01-01T12:20:00Z",
+        "updatedAt": "2023-01-01T12:28:00Z"
+    }
+]
