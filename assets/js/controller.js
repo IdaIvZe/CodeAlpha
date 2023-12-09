@@ -20,7 +20,8 @@ document.getElementById('contenedor-button-free').addEventListener('click', () =
     window.location.href = 'editor.html';
 });
 
-document.getElementById('button-siguiente').addEventListener('click', () => {
+document.getElementById('button-siguiente').addEventListener('click', (event) => {
+    event.preventDefault();
     const seccionComprarPlan2 = document.getElementById('seccion-comprar-plan-2');
     const seccionComprarPlan = document.getElementById('seccion-comprar-plan');
     const body = document.getElementById('body');

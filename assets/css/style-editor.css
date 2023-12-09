@@ -1,0 +1,938 @@
+#nav-landing {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-image: linear-gradient(to right, #7C31E8 25%, #16C0CC);
+    height: 70px;
+    padding: 0px 12px;
+}
+
+#button-iniciar-sesion {
+    width: 150px;
+    height: 40px;
+    background-image: linear-gradient(45deg, #7C31E8, #BC92F9);
+    color: #fff;
+    border-radius: 8px;
+    border: 0;
+    filter: drop-shadow(1px 1px 2px #bc92f9);
+    font-size: 1.3rem;
+    /*font-family: Wendy One;*/
+}
+
+#img-logo {
+    width: 250px;
+    margin-right: 26px;
+}
+
+.buscador {
+    width: 600px;
+    height: 32px;
+    border-radius: 7px;
+    border: 0;
+    /* padding-left: 10px; */
+    background-color: #d9d9d9;
+    color: #000;
+}
+
+.buscador-editor {
+    width: 167px;
+    height: 20px;
+    /* border-radius: 7px; */
+    border: none;
+    /* padding-left: 10px; */
+    background-color: #7c31e8;
+    color: white;
+    position: relative;
+    bottom: 4px;
+}
+
+#seccion-landing {
+    background-color: #000000;
+    width: 100%;
+    height: 1200px;
+    position: absolute;
+}
+
+#seccion-landing h3 {
+    width: 652px;
+    font-family: Wendy One;
+    color: #fff;
+    font-size: 3rem;
+    margin: 30px;
+}
+
+#seccion-landing p {
+    width: 652px;
+    color: #fff;
+    font-size: 1.5rem;
+    font-family: system-ui;
+    margin: 30px;
+    margin-top: 0;
+}
+
+#contenedor-img-landing {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 30px;
+    width: 600px;
+    height: 400px;
+    background-color: #292929;
+}
+
+#img-landing {
+    width: 500px;
+}
+
+#button-registrarse {
+    position: relative;
+    margin-left: 280px;
+    width: 135px;
+    height: 40px;
+    background-image: linear-gradient(45deg, #7C31E8, #16C0CC);
+    color: #fff;
+    border-radius: 8px;
+    border: 0;
+    font-size: 1.3rem;
+    /* font-family: Wendy One; */
+    cursor: pointer;
+}
+
+#div-construir, #div-compartir {
+    width: 400px;
+    height: 400px;
+    background-color: #2c303a;
+    margin: 30px;
+    margin-top: 100px;
+    border-radius: 10px;
+}
+
+#div-construir h2, #div-compartir h2 {
+    font-family: Wendy One;
+    font-size: 2rem;
+    color: #fff;
+    margin-left: 30px;
+    margin-top: 60px;
+}
+
+#div-construir img, #div-compartir img {
+    position: absolute;
+    width: 100px;
+    margin-top: -40px;
+    margin-left: 40px;
+    border-radius: 10px;
+}
+
+#div-construir p, #div-compartir p {
+    width: 340px;
+    font-family: system-ui;
+    font-size: 1.5rem;
+}
+
+#div-construir .button, #div-compartir .button {
+    position: relative;
+    margin-left: 128px;
+    margin-top: 25px;
+    width: 135px;
+    height: 40px;
+    background-image: linear-gradient(45deg, #7C31E8, #16C0CC);
+    color: #fff;
+    border-radius: 8px;
+    border: 0;
+    font-size: 1.3rem;
+}
+
+#div-compartir .button {
+    width: max-content;
+    margin-left: 115px;
+}
+
+/* input::placeholder {
+    text-decoration: none;
+    font-size: 0.3rem;
+} */
+
+/*
+Fin de estilos sección landing
+*/
+
+/*
+Estilos sección planes
+*/
+
+#seccion-planes {
+    background-color: #000000;
+    width: 100%;
+    height: 1200px;
+    display: block;
+}
+
+#contenedor-planes {
+    margin: 0px 25px;
+    padding-top: 45px;
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+}
+
+.planes {
+    background-color: #2c303a;
+    height: 550px;
+    width: 320px;
+    border-radius: 5px;
+    border: 0.2px solid #A79F9F;
+}
+
+.barra-color {
+    background-color: #6FCC7C;
+    width: 290px;
+    height: 8px;
+    border-radius: 5px;
+    margin-top: 6px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#plan-pro .barra-color {
+    background-color: #16C0CC;
+}
+
+#plan-enterprise .barra-color {
+    background-color: #7C31E8;
+}
+
+.nombre-plan {
+    margin-top: 15px;
+}
+
+.span-plan {
+    font-family: raleway;
+    font-size: 1.7rem;
+    font-weight: bold;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+}
+
+.descripcion-plan {
+    display: flex;
+    justify-content: center;
+    color: #fff;
+    margin-top: 30px;
+    font-family: system-ui;
+    line-height: 1.5;
+}
+
+.contenedor-button {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    margin-top: 271px;
+}
+
+.button-plan {
+    width: 150px;
+    height: 40px;
+    font-size: 1.3rem;
+    font-weight: bold;
+    background-color: #6FCC7C;
+    color: #fff;
+    border-radius: 8px;
+}
+
+#contenedor-button-pro {
+    margin-top: 55px;
+}
+
+#button-pro {
+    background-color: #16C0CC;
+}
+
+#contenedor-button-enterprise {
+    margin-top: 55px;
+}
+
+#button-enterprise {
+    background-color: #7C31E8;
+}
+
+.buttons-nabvar-planes {
+    width: 100px;
+    height: 40px;
+    font-size: 1.2rem;
+    border-radius: 8px;
+    background-image: linear-gradient(45deg,#7C31E8, #BC92F9);
+    color: #d9d9d9;
+    border: 0px;
+    margin-left: 10px;
+}
+
+#button-perfil {
+    width: 40px;
+}
+
+#opciones-guardar {
+    width: 28px;
+    border-radius: 0px 8px 8px 0px;
+    margin-left: 0px;
+}
+
+#button-guardar {
+    border-radius: 8px 0px 0px 8px;
+    margin-right: 0px;
+}
+
+#seccion-opciones-guardar {
+    position: fixed;
+    width: 100px;
+    height: 80px;
+    background-color: #5A5F73;
+    color: #fff;
+    font-family: system-ui;
+    margin-left: 87.5%;
+    margin-top: -605px;
+    border-radius: 0px 10px 10px 10px;
+    padding-left: 6px;
+    padding-top: 5px;
+    display: none;
+}
+
+#seccion-opciones-guardar-editor {
+    position: fixed;
+    width: 100px;
+    height: 80px;
+    background-color: #5A5F73;
+    color: #fff;
+    font-family: system-ui;
+    margin-left: 81.5%;
+    margin-top: -1025px;
+    border-radius: 0px 10px 10px 10px;
+    padding-left: 6px;
+    padding-top: 5px;
+    display: none;
+}
+
+#seccion-menu-usuario {
+    position: fixed;
+    width: 200px;
+    height: 280px;
+    padding: 10px;
+    border-radius: 15px 0px 15px 15px;
+    background-color: #5A5F73;
+    color: #fff;
+    font-family: system-ui;
+    margin-left: 83.5%;
+    margin-top: -605px;
+}
+
+#seccion-menu-usuario-editor {
+    position: fixed;
+    width: 200px;
+    height: 280px;
+    padding: 10px;
+    border-radius: 15px 0px 15px 15px;
+    background-color: #5A5F73;
+    color: #fff;
+    font-family: system-ui;
+    margin-left: 85.89%;
+    margin-top: -1025px;
+}
+
+
+#seccion-opciones-ajustes {
+    position: fixed;
+    width: 200px;
+    height: 215px;
+    padding: 10px;
+    border-radius: 15px 0px 15px 15px;
+    background-color: #5A5F73;
+    color: #fff;
+    font-family: system-ui;
+    margin-left: 78%;
+    margin-top: -605px;
+}
+
+#seccion-opciones-ajustes-editor {
+    position: fixed;
+    width: 200px;
+    height: 215px;
+    padding: 10px;
+    border-radius: 15px 0px 15px 15px;
+    background-color: #5A5F73;
+    color: #fff;
+    font-family: system-ui;
+    margin-left: 82.4%;
+    margin-top: -1025px;
+}
+
+#contenedor-compartir, #contenedor-agregar-colaboradores {
+    position: absolute;
+    background-color: #fff;
+    width: 308px;
+    height: 280px;
+    padding: 15px;
+    border-radius: 5px;
+    font-family: system-ui;
+    margin-top: 100px;
+    left: 580px;
+}
+
+#seccion-compartir, #seccion-agregar-colaboradores {
+    top: -597px;
+}
+
+#email-compartir, #email-colaboradores {
+    width: 300px;
+    height: 30px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+#button-copiar-vinculo, #copiar-vinculo-colaboradores {
+    width: 130px;
+    height: 30px;
+    background-color: #fff;
+    color: #7C31E8;
+    border-radius: 15px;
+    border: 0.5px solid gray;
+}
+
+#button-listo, #button-agregar {
+    width: 70px;
+    height: 30px;
+    border-radius: 15px;
+    background-image: linear-gradient(45deg,#7C31E8, #BC92F9);
+    color: #fff;
+    border: 0px;
+}
+
+.div-menu-usuario {
+    margin-bottom: 10px;
+    margin-left: 5px;
+}
+
+.div-opciones-ajustes {
+    margin-bottom: 10px;
+    margin-left: 5px;
+}
+
+.span-menu-usuario {
+    margin-left: 5px;
+}
+
+.span-opciones-ajustes {
+    margin-left: 5px;
+}
+
+.menu-guardar {
+    margin-top: 1px;
+    margin-bottom: 1px;
+}
+
+
+
+/* fin estilos de la seccion planes */
+.Section-Login{
+    position: relative;
+    top: 75px;
+    background-color: rgba(0, 0, 0, 0.5);
+    width: 100%;
+    height: 1200px;
+}
+
+.Login{
+    width: 400px;
+    height: 600px;
+    left: 580px;
+    position: absolute;
+    box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.5);
+    background-color: aliceblue;
+}
+
+.Logo-login{
+    /* background-color: #9b6b6b; */
+    /* background-image: linear-gradient(45deg,#3fce7f, #13bff4); */
+    background-image: linear-gradient(45deg, #7C31E8, #16C0CC);
+    /* background-color: #77c700; */
+    width: 100%;
+    height: 94px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.p-login{
+    color: white;
+    font-size: 40px;
+    font-family: Wendy One;
+}
+/* #img-login{
+    width: 259px;
+    height: 76px;
+    position: absolute;
+    left: 70px;
+    top: 8px;
+} */
+
+.Login-content{
+    display: grid;
+    justify-content: center;
+    justify-items: center;
+}
+
+.Buttons-login{
+    display: grid;
+    justify-items: center;
+    margin-top: 10px;
+}
+
+.button-1{
+    display: grid;
+}
+
+#img-google{
+    position: relative;
+    right: 15px;
+}
+
+.google-btn{
+    background-color: black;
+    border-radius: 5px;
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    width: 320px;
+    height: 54px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.button-2{
+    display: grid;
+    width: 320px;
+    height: 54px;
+    margin-top: 10px;
+}
+
+#img-guthub{
+    position: relative;
+    right: 15px;
+}
+
+.github-btn{
+    border-radius: 5px;
+    background-color: black;
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    width: 320px;
+    height: 54px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+ .form-group {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    width: 296px;
+}
+
+.form-group label {
+    width: 70px;
+    margin-right: 10px;
+    text-align: start;
+    padding-left: 19px;
+}
+
+.form-group input {
+    flex: 1; /* Hace que el input ocupe el espacio restante */
+    border: 1.6px solid darkslategray;
+    height: 45px;
+    border-radius: 4px;
+    font-size: 20px;
+} 
+
+.button-login{
+    width: 165px;
+    height: 50px;
+    border-radius: 11px;
+    background-image: linear-gradient(45deg, #7C31E8, #16C0CC);
+    color: white;
+    margin-top: 10px;
+    font-size: 18px;
+    font-family: Wendy One;
+    cursor: pointer;
+    position: relative;
+    left: 22%;
+}
+
+#btn-login {
+    font-family: system-ui;
+    border: 0;
+}
+
+input::placeholder{
+    /* font-size: 18px; */
+    padding-left: 10px;
+    text-decoration: none;
+    text-align: left;
+    padding-left: 0px;
+    color: white;
+}
+
+#p-1{
+    font-size: 25px;
+    font-weight: 600;
+    margin: 10px;
+}
+
+#p-2{
+    font-size: 21px;
+}
+
+#registro{
+    text-decoration: none;
+    color: #3584FB;
+}
+
+.Section-Sign{
+    position: relative;
+    top: 75px;
+    background-color: rgba(0, 0, 0, 0.5);
+    width: 100%;
+    height: 1200px;
+}
+
+.Sign{
+    width: 400px;
+    height: 630px;
+    left: 580px;
+    position: absolute;
+    box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.5);
+    background-color: aliceblue;
+}
+
+.Logo-sign{
+    background-image: linear-gradient(45deg, #7C31E8, #16C0CC);
+    width: 100%;
+    height: 94px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.p-sign{
+    font-family: Wendy One;
+    font-size: 40px;
+    color: white;
+}
+/* #img-sign{
+    width: 259px;
+    height: 76px;
+    position: absolute;
+    left: 70px;
+    top: 8px;
+} */
+
+ .Sign-content{
+    margin-top: 10px;
+}
+
+#sign-form, #form-comprar-plan, #form-comprar-plan-2 {
+    display: grid;
+    justify-items: center;
+    justify-content: center;
+    position: relative;
+    right: 16px;
+}
+
+.Buttons-sign{
+    display: grid;
+    justify-items: center;
+    margin-top: 10px;
+}
+
+.button-1{
+    display: grid;
+}
+
+#img-google{
+    position: relative;
+    right: 15px;
+}
+
+.google-btn{
+    background-color: black;
+    border-radius: 5px;
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    width: 320px;
+    height: 54px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.button-2{
+    display: grid;
+    width: 320px;
+    height: 54px;
+    margin-top: 10px;
+}
+
+#img-guthub{
+    position: relative;
+    right: 15px;
+}
+
+.github-btn{
+    border-radius: 5px;
+    background-color: black;
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    width: 320px;
+    height: 54px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.form-group {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    width: 296px;
+}
+
+.form-group label {
+    width: 70px; /* Ancho de la etiqueta (ajusta según tus necesidades) */
+    margin-right: 10px; /* Espacio entre la etiqueta y el input (ajusta según tus necesidades) */
+    text-align: start;
+    padding-left: 19px;
+}
+
+.form-group input {
+    flex: 1; /* Hace que el input ocupe el espacio restante */
+    border: 1.6px solid darkslategray;
+    height: 45px;
+    border-radius: 4px;
+    font-size: 20px;
+} 
+
+.button-login{
+    width: 165px;
+    height: 50px;
+    border-radius: 11px;
+    background-image: linear-gradient(45deg, #7C31E8, #16C0CC);
+    color: white;
+    margin-top: 10px;
+    font-size: 18px;
+}
+
+input::placeholder{
+    font-size: 18px;
+}
+
+#p-1{
+    font-size: 25px;
+    font-weight: 600;
+    margin: 10px;
+}
+
+#p-2{
+    font-size: 21px;
+}
+
+#registro{
+    text-decoration: none;
+    color: #3584FB;
+
+}
+
+.sign-form{
+    width: 80%;
+    margin-top: 10px;
+}
+
+.sign-label{
+    font-size: 18px;
+}
+
+#user{
+    width: 100%;
+    height: 35px;
+    border: 2px solid black;
+    border-radius: 4px;
+    width: 310px;
+    height: 50.2px;
+    font-size: 18px;
+}
+
+#password{
+    width: 100%;
+    height: 35px;
+    border: 2px solid black;
+    border-radius: 4px;
+    width: 310px;
+    height: 50.2px;
+    font-size: 18px;
+}
+
+#password-2{
+    width: 100%;
+    height: 35px;
+    border: 2px solid black;
+    border-radius: 4px;
+    width: 310px;
+    height: 50.2px;
+    font-size: 18px;
+}
+
+#names{
+    width: 100%;
+    height: 35px;
+    border: 2px solid black;
+    border-radius: 4px;
+    width: 310px;
+    height: 50.2px;
+    font-size: 18px;
+}
+
+#e-mail{
+    width: 100%;
+    height: 35px;
+    border: 2px solid black;
+    border-radius: 4px;
+    width: 310px;
+    height: 50.2px;
+    font-size: 18px;
+}
+
+.checkbox{
+    margin-top: 15px;
+    font-size: 15px;
+    width: 348px;
+    position: relative;
+    left: 10px;
+}
+
+.terminos{
+    color: #84B329;
+    text-decoration: none;
+}
+
+.button-sign{
+    width: 165px;
+    height: 50px;
+    border-radius: 11px;
+    background-image: linear-gradient(45deg, #7C31E8, #16C0CC);
+    color: white;
+    margin-top: 20px;
+    font-size: 18px;
+    /* font-family: Wendy One; */
+    cursor: pointer;
+    position: relative;
+    left: 13px;
+    bottom: 10px;
+}
+
+#logueo{
+    text-decoration: none;
+    color: #3584FB;
+}
+
+#p-3{
+    font-size: 21px;
+    text-align: center;
+    position: relative;
+    bottom: 10px;
+}
+
+#seccion-comprar-plan, #seccion-comprar-plan-2 {
+    top: -597px;
+    color: #fff;
+    height: 1128px;
+    /* display: none; */
+}
+
+/* #seccion-comprar-plan-2 {
+    display: none;
+} */
+
+.form-comprar-planes {
+    border: 2px solid black;
+    border-radius: 4px;
+    width: 310px;
+    height: 35px;
+    font-size: 1rem;
+}
+
+#form-comprar-plan, #form-comprar-plan-2 {
+    right: 0px;
+}
+
+#contenedor-form-plan, #contenedor-form-plan-2 {
+    width: 400px;
+    height: 660px;
+    background-color: aliceblue;
+    color: #000;
+    position: absolute;
+    left: 580px;
+}
+
+#contenedor-comprar-plan, #contenedor-comprar-plan-2 {
+    font-family: wendy one;
+    font-size: 1.5rem;
+    color: #7c31e8;
+    /* text-shadow: 1.5px 0.5px #13bff4; */
+    display: flex;
+    justify-content: center;
+}
+
+.div-form-comprar-plan {
+    font-family: system-ui;
+}
+
+#button-siguiente, #button-comprar {
+    width: 130px;
+    height: 40px;
+}
+
+.div-form-comprar-plan ul {
+    padding-bottom: 0px;
+    margin-top: 0px;
+}
+
+#terminos-condiciones {
+    margin-top: 7px;
+}
+
+#contenedor-precios {
+    border: 2px solid #000;
+    width: 314px;
+    height: 35px;
+    border-radius: 5px;
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+}
+
+#form-comprar-plan-2 input::placeholder {
+    font-size: 2rem;
+    font-family: system ui;
+    font-weight: bold;
+}
+
+.form-vencimiento {
+    width: 100px;
+    height: 35px;
+}
+
+#contenedor-form-plan-2 {
+    height: 600px;
+}
