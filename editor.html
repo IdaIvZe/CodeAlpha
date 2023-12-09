@@ -119,50 +119,124 @@
     </section>
 
     <section id="seccion-menu-usuario-editor" style="display: none;">
-        <div class="div-menu-usuario">
+        <div id="nuevo-proyecto-editor" class="div-menu-usuario">
             <i class="fa-regular fa-square-plus"></i>
             <span class="span-menu-usuario">Nuevo Proyecto</span>
         </div>
-        <div class="div-menu-usuario">
+        <div id="nueva-carpeta" class="div-menu-usuario">
             <i class="fa-solid fa-folder-plus"></i>
             <span class="span-menu-usuario">Nueva Carpeta</span>
         </div>
-        <div class="div-menu-usuario">
+        <div id="nuevo-archivo" class="div-menu-usuario">
             <i class="fa-regular fa-file-code"></i>
             <span class="span-menu-usuario">Nuevo archivo</span>
         </div>
-        <div class="div-menu-usuario">
+        <div id="mis-proyectos" class="div-menu-usuario">
             <i class="fa-solid fa-briefcase" style="color: aquamarine;"></i>
             <span class="span-menu-usuario">Mis proyectos</span>
         </div>
-        <div class="div-menu-usuario">
+        <div id="mis-carpetas" class="div-menu-usuario">
             <i class="fa-solid fa-folder" style="color: gold;"></i>
             <span class="span-menu-usuario">Mis carpetas</span>
         </div>
-        <div class="div-menu-usuario">
+        <div id="compartidos-conmigo" class="div-menu-usuario">
             <i class="fa-solid fa-user-group" style="color: aqua;"></i>
             <span class="span-menu-usuario">Compartidos conmigo</span>
         </div>
-        <div class="div-menu-usuario">
+        <div id="actualizar-plan" class="div-menu-usuario">
             <i class="fa-solid fa-pen-nib" style="color: gold;"></i>
             <span class="span-menu-usuario">Actualizar plan</span>
         </div>
-        <div class="div-menu-usuario">
+        <div id="configuraciones" class="div-menu-usuario">
             <i class="fa-solid fa-gear" style="color: darkorange;"></i>
             <span class="span-menu-usuario">Configuraciones</span>
         </div>
-        <div class="div-menu-usuario">
+        <div id="perfil" class="div-menu-usuario">
             <i class="fa-solid fa-user" style="color: palegreen;"></i>
             <span class="span-menu-usuario">Perfil</span>
         </div>
-        <div class="div-menu-usuario">
+        <div id="salir" class="div-menu-usuario">
             <i class="fa-solid fa-arrow-right-from-bracket" style="color: lightsteelblue;"></i>
             <span class="span-menu-usuario">Salir</span>
         </div>
     </section>
 
-    <section id="seccion-compartir" class="Section-Sign" style="display: none;">
-        
+    <section id="seccion-nuevo-proyecto-editor" class="Section-Sign" style="display: none;">
+        <div id="contenedor-nuevo-proyecto">
+            <div style="margin-bottom: 20px;">
+                <span style="font-size: 1.4rem;">Nuevo proyecto</span>
+            </div>
+            <div>
+                <input type="text" placeholder="Proyecto sin título" id="input-nuevo-proyecto">
+            </div>
+            <div style="display: flex; justify-content: end;">
+                <button id="button-cancelar-nuevo-proyecto">Cancelar</button>
+                <button id="button-crear-nuevo-proyecto">Crear</button>
+            </div>
+        </div>
+    </section>
+
+    <section id="seccion-nueva-carpeta-editor" class="Section-Sign" style="display: none;">
+        <div id="contenedor-nueva-carpeta">
+            <div style="margin-bottom: 20px;">
+                <span style="font-size: 1.4rem;">Carpeta nueva</span>
+            </div>
+            <div>
+                <input type="text" placeholder="Carpeta sin título" id="input-nueva-carpeta">
+            </div>
+            <div style="display: flex; justify-content: end;">
+                <button id="button-cancelar-nueva-carpeta">Cancelar</button>
+                <button id="button-crear-nueva-carpeta">Crear</button>
+            </div>
+        </div>
+    </section>
+
+    <section id="seccion-agregar-colaboradores-editor" class="Section-Sign" style="display: none;">
+            
+        <div id="contenedor-agregar-colaboradores">
+            <div style="display: flex; justify-content: space-between;">
+                <span style="font-size: 1.2rem;">Agregar colaboradores a "Proyecto POO"</span>
+                <div>
+                    <i class="fa-solid fa-rectangle-xmark" style="font-size: 1.5rem; color: #ff0000de;"></i>
+                </div>
+            </div>
+
+            <div>
+                <input type="email" placeholder="Agregar colaboradores" name="" id="email-colaboradores">
+            </div>
+
+            <div style="margin-bottom: 20px;">
+                <span>Colaboradores</span>
+            </div>
+
+            <div style="display: flex; justify-content: space-between;">
+                <div style="display: flex; justify-content: space-between;">
+                    <div>
+                        <img src="assets/img/sasuke.jpg" alt="" style="width: 50px; border-radius: 100%;">
+                    </div>
+                    <div style="margin-left: 10px;">
+                        <div>Sasuke (tú)</div>
+                        <div style="color: #8a8a8a; font-size: 0.9rem;">sasuke@gmail.com</div>
+                    </div>
+                </div>
+                <div style="color: #8a8a8a; font-size: 0.9rem;">
+                    Propietario
+                </div>
+            </div>
+
+            <div style="margin-top: 20px; display: flex; justify-content: space-between;">
+                <button id="copiar-vinculo-colaboradores">
+                    <i class="fa-solid fa-link"></i>
+                    <span>Copiar vínculo</span>
+                </button>
+                <button id="button-agregar">Agregar</button>
+            </div>
+        </div>
+
+    </section>
+
+    <section id="seccion-compartir-editor" class="Section-Sign" style="display: none;">
+            
         <div id="contenedor-compartir">
             <div style="display: flex; justify-content: space-between;">
                 <span style="font-size: 1.2rem;">Compartir "Proyecto POO"</span>
@@ -205,48 +279,295 @@
 
     </section>
 
-    <section id="seccion-agregar-colaboradores" class="Section-Sign" style="display: none;">
-        
-        <div id="contenedor-agregar-colaboradores">
-            <div style="display: flex; justify-content: space-between;">
-                <span style="font-size: 1.2rem;">Agregar colaboradores a "Proyecto POO"</span>
-                <div>
-                    <i class="fa-solid fa-rectangle-xmark" style="font-size: 1.5rem; color: #ff0000de;"></i>
-                </div>
+    <section id="seccion-mis-proyectos-editor" style="display: none;">
+        <div id="contenedor-proyectos">
+            <div id="atras-proyectos" style="margin-bottom: 10px; font-size: 1.3rem;">
+                <i class="fa-solid fa-arrow-left"></i>
             </div>
-
+            <div style="margin-bottom: 25px;">
+                <span style="font-size: 1.5rem;">Mis proyectos</span>
+            </div>
             <div>
-                <input type="email" placeholder="Agregar colaboradores" name="" id="email-colaboradores">
+                <span>Nombre</span>
+                <span style="margin-left: 600px;">Propietario</span>
             </div>
-
-            <div style="margin-bottom: 20px;">
-                <span>Colaboradores</span>
-            </div>
-
-            <div style="display: flex; justify-content: space-between;">
-                <div style="display: flex; justify-content: space-between;">
-                    <div>
-                        <img src="assets/img/sasuke.jpg" alt="" style="width: 50px; border-radius: 100%;">
-                    </div>
-                    <div style="margin-left: 10px;">
-                        <div>Sasuke (tú)</div>
-                        <div style="color: #8a8a8a; font-size: 0.9rem;">sasuke@gmail.com</div>
-                    </div>
+            <hr>
+            <div style="margin-top: 15px; display: flex;">
+                <div>
+                    <i class="fa-solid fa-file-lines" style="color: blueviolet; font-size: 1.2rem;"></i>
+                    <span>Proyecto POO</span>
                 </div>
-                <div style="color: #8a8a8a; font-size: 0.9rem;">
-                    Propietario
+                <div class="div-mis-proyectos">
+                    <div><i class="fa-solid fa-user" style="color: darkgray;"></i></div>
+                    <span style="margin-left: 8px">Yo</span>
+                </div>
+                <div id="mas-proyectos" class="divs-ellipsis">
+                    <i class="fa-solid fa-ellipsis"></i>
                 </div>
             </div>
+            <hr>
 
-            <div style="margin-top: 20px; display: flex; justify-content: space-between;">
-                <button id="copiar-vinculo-colaboradores">
-                    <i class="fa-solid fa-link"></i>
-                    <span>Copiar vínculo</span>
-                </button>
-                <button id="button-agregar">Agregar</button>
+            <div style="margin-top: 15px; display: flex;">
+                <div>
+                    <i class="fa-solid fa-file-lines" style="color: blueviolet; font-size: 1.2rem;"></i>
+                    <span>Proyecto POO</span>
+                </div>
+                <div class="div-mis-proyectos">
+                    <div><i class="fa-solid fa-user" style="color: darkgray;"></i></div>
+                    <span style="margin-left: 8px">Yo</span>
+                </div>
+                <div class="divs-ellipsis">
+                    <i class="fa-solid fa-ellipsis"></i>
+                </div>
             </div>
+            <hr>
+
+            <div style="margin-top: 15px; display: flex;">
+                <div>
+                    <i class="fa-solid fa-file-lines" style="color: blueviolet; font-size: 1.2rem;"></i>
+                    <span>Proyecto POO</span>
+                </div>
+                <div class="div-mis-proyectos">
+                    <div><i class="fa-solid fa-user" style="color: darkgray;"></i></div>
+                    <span style="margin-left: 8px">Yo</span>
+                </div>
+                <div class="divs-ellipsis">
+                    <i class="fa-solid fa-ellipsis"></i>
+                </div>
+            </div>
+            <hr>
+
+            <div style="margin-top: 15px; display: flex;">
+                <div>
+                    <i class="fa-solid fa-file-lines" style="color: blueviolet; font-size: 1.2rem;"></i>
+                    <span>Proyecto POO</span>
+                </div>
+                <div class="div-mis-proyectos">
+                    <div><i class="fa-solid fa-user" style="color: darkgray;"></i></div>
+                    <span style="margin-left: 8px">Yo</span>
+                </div>
+                <div class="divs-ellipsis">
+                    <i class="fa-solid fa-ellipsis"></i>
+                </div>
+            </div>
+            <hr>
+
+            <div style="margin-top: 15px; display: flex;">
+                <div>
+                    <i class="fa-solid fa-file-lines" style="color: blueviolet; font-size: 1.2rem;"></i>
+                    <span>Proyecto POO</span>
+                </div>
+                <div class="div-mis-proyectos">
+                    <div><i class="fa-solid fa-user" style="color: darkgray;"></i></div>
+                    <span style="margin-left: 8px">Yo</span>
+                </div>
+                <div class="divs-ellipsis">
+                    <i class="fa-solid fa-ellipsis"></i>
+                </div>
+            </div>
+            <hr>
         </div>
 
+    </section>
+
+    <section id="seccion-mis-carpetas-editor" style="display: none;">
+        <div id="contenedor-carpetas">
+            <div id="atras-carpetas" style="margin-bottom: 10px; font-size: 1.3rem;">
+                <i class="fa-solid fa-arrow-left"></i>
+            </div>
+            <div style="margin-bottom: 25px;">
+                <span style="font-size: 1.5rem;">Mis carpetas</span>
+            </div>
+            <div>
+                <span>Nombre</span>
+                <span style="margin-left: 600px;">Propietario</span>
+            </div>
+            <hr>
+            <div style="margin-top: 15px; display: flex;">
+                <div>
+                    <i class="fa-solid fa-folder" style="color: gold; font-size: 1.2rem;"></i>
+                    <span>Proyecto POO</span>
+                </div>
+                <div class="div-mis-proyectos">
+                    <div><i class="fa-solid fa-user" style="color: darkgray;"></i></div>
+                    <!-- <i class="fa-solid fa-circle-user"></i> -->
+                    <span style="margin-left: 8px">Yo</span>
+                </div>
+                <div class="divs-ellipsis">
+                    <i class="fa-solid fa-ellipsis"></i>
+                </div>
+            </div>
+            <hr>
+
+            <div style="margin-top: 15px; display: flex;">
+                <div>
+                    <i class="fa-solid fa-folder" style="color: gold; font-size: 1.2rem;"></i>
+                    <span>Proyecto POO</span>
+                </div>
+                <div class="div-mis-proyectos">
+                    <div><i class="fa-solid fa-user" style="color: darkgray;"></i></div>
+                    <span style="margin-left: 8px">Yo</span>
+                </div>
+                <div class="divs-ellipsis">
+                    <i class="fa-solid fa-ellipsis"></i>
+                </div>
+            </div>
+            <hr>
+
+            <div style="margin-top: 15px; display: flex;">
+                <div>
+                    <i class="fa-solid fa-folder" style="color: gold; font-size: 1.2rem;"></i>
+                    <span>Proyecto POO</span>
+                </div>
+                <div class="div-mis-proyectos">
+                    <div><i class="fa-solid fa-user" style="color: darkgray;"></i></div>
+                    <span style="margin-left: 8px">Yo</span>
+                </div>
+                <div class="divs-ellipsis">
+                    <i class="fa-solid fa-ellipsis"></i>
+                </div>
+            </div>
+            <hr>
+
+            <div style="margin-top: 15px; display: flex;">
+                <div>
+                    <i class="fa-solid fa-folder" style="color: gold; font-size: 1.2rem;"></i>
+                    <span>Proyecto POO</span>
+                </div>
+                <div class="div-mis-proyectos">
+                    <div><i class="fa-solid fa-user" style="color: darkgray;"></i></div>
+                    <span style="margin-left: 8px">Yo</span>
+                </div>
+                <div class="divs-ellipsis">
+                    <i class="fa-solid fa-ellipsis"></i>
+                </div>
+            </div>
+            <hr>
+
+            <div style="margin-top: 15px; display: flex;">
+                <div>
+                    <i class="fa-solid fa-folder" style="color: gold; font-size: 1.2rem;"></i>
+                    <span>Proyecto POO</span>
+                </div>
+                <div class="div-mis-proyectos">
+                    <div><i class="fa-solid fa-user" style="color: darkgray;"></i></div>
+                    <span style="margin-left: 8px">Yo</span>
+                </div>
+                <div class="divs-ellipsis">
+                    <i class="fa-solid fa-ellipsis"></i>
+                </div>
+            </div>
+            <hr>
+        </div>
+
+    </section>
+
+    <section id="seccion-compartidos-conmigo-editor" style="display: none;">
+        <div id="contenedor-compartidos-conmigo">
+            <div id="atras-compartidos" style="margin-bottom: 10px; font-size: 1.3rem;">
+                <i class="fa-solid fa-arrow-left"></i>
+            </div>
+            <div style="margin-bottom: 25px;">
+                <span style="font-size: 1.5rem;">Compartidos conmigo</span>
+            </div>
+            <div>
+                <span>Nombre</span>
+                <span style="margin-left: 600px;">Propietario</span>
+            </div>
+            <hr>
+            <div style="margin-top: 15px; display: flex;">
+                <div>
+                    <i class="fa-solid fa-file-lines" style="color: blueviolet; font-size: 1.2rem;"></i>
+                    <span>Proyecto POO</span>
+                </div>
+                <div class="div-mis-proyectos">
+                    <div><i class="fa-solid fa-user" style="color: darkgray;"></i></div>
+                    <span style="margin-left: 8px">Gokú</span>
+                </div>
+                <div class="divs-ellipsis">
+                    <i class="fa-solid fa-ellipsis"></i>
+                </div>
+            </div>
+            <hr>
+
+            <div style="margin-top: 15px; display: flex;">
+                <div>
+                    <i class="fa-solid fa-folder" style="color: gold; font-size: 1.2rem;"></i>
+                    <span>Carpeta de entrega final</span>
+                </div>
+                <div class="div-mis-proyectos">
+                    <div><i class="fa-solid fa-user" style="color: darkgray;"></i></div>
+                    <span style="margin-left: 8px">Naruto</span>
+                </div>
+                <div class="divs-ellipsis">
+                    <i class="fa-solid fa-ellipsis"></i>
+                </div>
+            </div>
+            <hr>
+
+            <div style="margin-top: 15px; display: flex;">
+                <div>
+                    <i class="fa-solid fa-file-lines" style="color: blueviolet; font-size: 1.2rem;"></i>
+                    <span>JSON base de datos</span>
+                </div>
+                <div class="div-mis-proyectos">
+                    <div><i class="fa-solid fa-user" style="color: darkgray;"></i></div>
+                    <span style="margin-left: 8px">Sasuke</span>
+                </div>
+                <div class="divs-ellipsis">
+                    <i class="fa-solid fa-ellipsis"></i>
+                </div>
+            </div>
+            <hr>
+
+            <div style="margin-top: 15px; display: flex;">
+                <div>
+                    <i class="fa-solid fa-folder" style="color: gold; font-size: 1.2rem;"></i>
+                    <span>Proyecto primera entrega</span>
+                </div>
+                <div class="div-mis-proyectos">
+                    <div><i class="fa-solid fa-user" style="color: darkgray;"></i></div>
+                    <span style="margin-left: 8px">Gokú</span>
+                </div>
+                <div class="divs-ellipsis">
+                    <i class="fa-solid fa-ellipsis"></i>
+                </div>
+            </div>
+            <hr>
+
+            <div style="margin-top: 15px; display: flex;">
+                <div>
+                    <i class="fa-solid fa-folder" style="color: gold; font-size: 1.2rem;"></i>
+                    <span>Documentos importantes</span>
+                </div>
+                <div class="div-mis-proyectos">
+                    <div><i class="fa-solid fa-user" style="color: darkgray;"></i></div>
+                    <span style="margin-left: 8px">Sasuke</span>
+                </div>
+                <div class="divs-ellipsis">
+                    <i class="fa-solid fa-ellipsis"></i>
+                </div>
+            </div>
+            <hr>
+        </div>
+
+    </section>
+
+    <section id="seccion-opciones-ellipsis-editor" class="Section-Sing" style="display: none;">
+        <div id="contenedor-opciones-ellipsis">
+            <div style="margin-bottom: 10px;">
+                <span>Compartir</span>
+            </div>
+            <div style="margin-bottom: 10px;">
+                <span>Agregar Colaborador</span>
+            </div>
+            <div style="margin-bottom: 10px;">
+                <span>Editar</span>
+            </div>
+            <div style="margin-bottom: 10px;">
+                <span>Eliminar</span>
+            </div>
+        </div>
     </section>
     
     <script src="https://kit.fontawesome.com/826eea4132.js" crossorigin="anonymous"></script>
@@ -256,7 +577,11 @@
     </script>
 
     <script src="assets/js/controller2.js"></script>
+<<<<<<< HEAD
     <!-- <script src="/assets/js/controller.editor.js"></script> -->
+=======
+    <script src="assets/js/controller.menuUsuario2.js"></script>
+>>>>>>> 29a89da78aeee5214b7b52ecaa6ef92172be4dde
 </body>
 
 </html>

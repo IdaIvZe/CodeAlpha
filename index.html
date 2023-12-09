@@ -68,7 +68,7 @@
                     </div>
                 </div>
                 <p id="p-1">Or</p>
-            <form id="login-form" action="editor.html">
+            <form id="login-form" onsubmit="enviarDatosLogin(event)">
                 <div class="form-group" id="usuario_name">
                     <input type="text" id="usuario" name="usuario" placeholder="Usuario" required>
                 </div>
@@ -94,7 +94,7 @@
                 <!-- <p class="p-sign">CODEALPHA</p> -->
             </div>
             <div class="Sign-content">
-            <form id="sign-form" onsubmit="enviarDatos(event)">
+            <form id="sign-form" onsubmit="enviarDatosSign(event)">
                 <div class="sign-form">
                     
                     <input type="text" name="usuario" id="user" placeholder="Usuario" required>

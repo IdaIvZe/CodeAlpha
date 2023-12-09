@@ -48,6 +48,10 @@ document.getElementById('button-ajustes-editor').addEventListener('click', () =>
     body.style.overflow = 'hidden';
 });
 
+document.getElementById('button-planes').addEventListener('click', () =>{
+  window.location.href = 'planes.html';
+});
+
 // document.getElementById('button-ajustes-editor').addEventListener('click', (event) => {
 //     console.log('Botón de ajustes clicado');
 
