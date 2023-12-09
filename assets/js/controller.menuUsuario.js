@@ -17,9 +17,14 @@ document.getElementById('button-cancelar-nuevo-proyecto').addEventListener('clic
 
 document.getElementById('button-crear-nuevo-proyecto').addEventListener('click', () => {
     const seccionNuevoProyecto = document.getElementById('seccion-nuevo-proyecto');
+    // const seccionMisProyectos = document.getElementById('seccion-mis-proyectos');
+    const seccionPlanes = document.getElementById('seccion-planes');
     const body = document.getElementById('body'); 
     
     seccionNuevoProyecto.style.display = 'none';
+    seccionPlanes.style.display = 'none';
+    window.location.href = 'editor.html';
+    // seccionMisProyectos.style.display = 'block';
     body.style.overflow = 'hidden';
 
     alert('Proyecto creado con éxito!!!');
@@ -35,13 +40,16 @@ document.getElementById('button-cancelar-nueva-carpeta').addEventListener('click
 
 document.getElementById('button-crear-nueva-carpeta').addEventListener('click', () => {
     const seccionNuevaCarpeta = document.getElementById('seccion-nueva-carpeta');
+    const seccionMisCarpetas = document.getElementById('seccion-mis-carpetas');
+    const seccionPlanes = document.getElementById('seccion-planes');
     const body = document.getElementById('body'); 
     
     seccionNuevaCarpeta.style.display = 'none';
+    seccionPlanes.style.display = 'none';
+    seccionMisCarpetas.style.display = 'block';
     body.style.overflow = 'hidden';
-
-
     alert('Carpeta creada con éxito!!!');
+
 });
 
 document.getElementById('nueva-carpeta').addEventListener('click', () => {
@@ -138,4 +146,59 @@ document.getElementById('mas-proyectos').addEventListener('click', () => {
 
     // seccionOpcionesGuardar.style.display = 'block';
     body.style.overflow = 'hidden';
+});
+
+
+document.getElementById('ajustes-compartir').addEventListener('click', () => {
+    const seccionCompartir = document.getElementById('seccion-compartir');
+    const body = document.getElementById('body'); 
+    
+    seccionCompartir.style.display = 'block';
+    body.style.overflow = 'hidden';
+});
+
+document.getElementById('cerrar-compartir').addEventListener('click', () => {
+    const seccionCompartir = document.getElementById('seccion-compartir');
+    const body = document.getElementById('body');  
+    
+    seccionCompartir.style.display = 'none';
+    body.style.overflow = 'hidden';
+});
+
+document.getElementById('button-listo').addEventListener('click', () => {
+    const seccionCompartir = document.getElementById('seccion-compartir');
+    const body = document.getElementById('body');  
+    
+    seccionCompartir.style.display = 'none';
+    body.style.overflow = 'hidden';
+
+
+    alert('Proyecto compartido con éxito!!!');
+});
+
+document.getElementById('agregar-colaboradores').addEventListener('click', () => {
+    const seccionColaboradores = document.getElementById('seccion-agregar-colaboradores');
+    const body = document.getElementById('body'); 
+    
+    seccionColaboradores.style.display = 'block';
+    body.style.overflow = 'hidden';
+});
+
+document.getElementById('cerrar-colaboradores').addEventListener('click', () => {
+    const seccionColaboradores = document.getElementById('seccion-agregar-colaboradores');
+    const body = document.getElementById('body'); 
+    
+    seccionColaboradores.style.display = 'none';
+    body.style.overflow = 'hidden';
+});
+
+document.getElementById('button-agregar').addEventListener('click', () => {
+    const seccionColaboradores = document.getElementById('seccion-agregar-colaboradores');
+    const body = document.getElementById('body'); 
+    
+    seccionColaboradores.style.display = 'none';
+    body.style.overflow = 'hidden';
+
+
+    alert('Colaborador agregado con éxito!!!');
 });
