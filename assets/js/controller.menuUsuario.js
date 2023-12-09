@@ -117,3 +117,25 @@ document.getElementById('atras-compartidos').addEventListener('click', () => {
     seccionPlanes.style.display = 'block';
     body.style.overflow = 'hidden';
 });
+
+// document.getElementById('mas-proyectos').addEventListener('click', () => {
+//     const seccionOpcionesEllipsis = document.getElementById('seccion-opciones-ellipsis');
+//     const body = document.getElementById('body'); 
+    
+//     seccionOpcionesEllipsis.style.display = 'block';
+//     body.style.overflow = 'hidden';
+// });
+
+document.getElementById('mas-proyectos').addEventListener('click', () => {
+    const seccionOpcionesEllipsis = document.getElementById('seccion-opciones-ellipsis');
+    const body = document.getElementById('body');
+
+    if (seccionOpcionesEllipsis.style.display == 'none') {
+        seccionOpcionesEllipsis.style.display = 'block'
+      } else {
+        seccionOpcionesEllipsis.style.display = 'none'
+    }
+
+    // seccionOpcionesGuardar.style.display = 'block';
+    body.style.overflow = 'hidden';
+});
