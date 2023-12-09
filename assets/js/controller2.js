@@ -1,3 +1,7 @@
+document.getElementById('button-planes').addEventListener('click', () => {
+  window.location.href = 'planes.html';
+});
+
 document.getElementById('opciones-guardar').addEventListener('click', () => {
     const seccionOpcionesGuardar = document.getElementById('seccion-opciones-guardar-editor');
     const body = document.getElementById('body');
