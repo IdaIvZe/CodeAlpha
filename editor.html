@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Editor de Código en Línea</title>
     <link rel="stylesheet" href="/assets/css/estilos.css">
-    <!-- <link rel="stylesheet" href="/assets/css/style.css"> -->
+    <link rel="stylesheet" href="/assets/css/style.css">
     <script src="/assets/js/main.js" defer></script>
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -20,6 +20,31 @@
         <nav id="nav-landing">
             <div style="display: flex; align-items: center;">
                 <img id="img-logo" src="assets/img/Logo Morado.png" alt="">
+                <input id="buscador" class="buscador" type="search" placeholder="Buscar...">
+            </div>
+            <div>
+                <button id="button-planes" class="buttons-nabvar-planes" type="submit">
+                    <span>Planes</span>
+                </button>
+                <button id="button-guardar" class="buttons-nabvar-planes" type="submit">
+                    <span>Guardar</span>
+                </button>
+                <button id="opciones-guardar" class="buttons-nabvar-planes" type="submit">
+                    <span><i class="fa-solid fa-angle-down"></i></span>
+                </button>
+                <button id="button-ajustes" class="buttons-nabvar-planes" type="submit">
+                    <i class="fa-solid fa-gear"></i>
+                    <span>Ajustes</span>
+                </button>
+                <button id="button-perfil" class="buttons-nabvar-planes" type="submit">
+                    <i class="fa-solid fa-user"></i>
+                </button>
+            </div>
+        </nav>
+
+        <!-- <nav id="nav-landing">
+            <div style="display: flex; align-items: center;">
+                <img id="img-logo" src="assets/img/Logo Morado.png" alt="">
             </div>
             <div class="actions-editor">
                 <a id="Planes" href="planes.html">Planes</a>
@@ -27,7 +52,8 @@
                 <a id="Ajustes" href="#"><i class="fa-solid fa-gear"></i> Ajustes</a>
                 <a id="icon-user" href="#"><i class="fa-solid fa-user"></i></a>
             </div>
-        </nav>
+        </nav> -->
+
         <div class="container">
             <div class="left">
                 <label id="html" for="html-code"><i class="fa-solid fa-code" style="color: orange;"></i> HTML</label>
@@ -61,6 +87,8 @@
     <script>
         hljs.highlightAll();
     </script>
+
+    <script src="/assets/js/controller.js"></script>
 </body>
 
 </html>

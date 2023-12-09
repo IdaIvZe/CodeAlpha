@@ -1,11 +1,25 @@
-document.getElementById('button-iniciar-sesion').addEventListener('click', () =>{
+document.getElementById('button-iniciar-sesion').addEventListener('click', () => {
     const mostrarLogin = document.getElementById('login-section');
     const body = document.getElementById('body');
 
-    mostrarLogin.style.display = 'block';
+    if (mostrarLogin.style.display == 'none') {
+        mostrarLogin.style.display = 'block'
+      } else {
+        mostrarLogin.style.display = 'none'
+    }
+
     body.style.overflow = 'hidden';
 });
-//Al dar click en el boton registrarse muestra la seccion de registro
+
+// document.getElementById('button-iniciar-sesion').addEventListener('click', () =>{
+//     const mostrarLogin = document.getElementById('login-section');
+//     const body = document.getElementById('body');
+
+//     mostrarLogin.style.display = 'block';
+//     body.style.overflow = 'hidden';
+// });
+
+// Al dar click en el boton registrarse muestra la seccion de registro
 document.getElementById('button-registrarse').addEventListener('click', () =>{
     const mostrarSign = document.getElementById('sign-section');
     const Login = document.getElementById('login-section');
@@ -35,36 +49,6 @@ document.getElementById('logueo').addEventListener('click', () =>{
     Sign.style.display = 'none';
     body.style.overflow = 'hidden';
 });
-
-document.getElementById('button-pro').addEventListener('click', () => {
-    const mostrarComprarPlanes = document.getElementById('seccion-comprar-plan');
-    const seccionPlanes = document.getElementById('seccion-planes');
-    const body = document.getElementById('body');
-
-    mostrarComprarPlanes.style.display = 'block';
-    seccionPlanes.style.display = 'none';
-    body.style.overflow = 'hidden';
-})
-
-// document.getElementById('opciones-guardar').addEventListener('click', () => {
-//     const mostrarSeccionOpcionesGuardar = document.getElementById('seccion-opciones-guardar');
-
-//     mostrarSeccionOpcionesGuardar.style.display = 'block';
-// })
-
-const ocultarSecciones = () => {
-    document.getElementById('seccion-opciones-guardar').style.display = 'none';
-}
-
-const mostrarOpcionesGuardar = () => {
-    ocultarSecciones();
-    document.getElementById('opciones-guardar').style.display = 'block';
-}
-
-
-
-
-
 
 // document.getElementById('btn-login').addEventListener('click', function(event) {
 //     // Obtener los valores de los campos de usuario y contraseña

@@ -25,20 +25,20 @@
                 <!-- <input id="buscador" class="buscador" type="search" placeholder="Buscar..."> -->
             </div>
             <div>
-                <button id="button-planes" class="buttons-nabvar-planes">
+                <button id="button-planes" class="buttons-nabvar-planes" type="submit">
                     <span>Planes</span>
                 </button>
-                <button id="button-guardar" class="buttons-nabvar-planes">
+                <button id="button-guardar" class="buttons-nabvar-planes" type="submit">
                     <span>Guardar</span>
                 </button>
-                <button id="opciones-guardar" class="buttons-nabvar-planes" onclick="mostrarOpcionesGuardar()">
+                <button id="opciones-guardar" class="buttons-nabvar-planes" type="submit">
                     <span><i class="fa-solid fa-angle-down"></i></span>
                 </button>
-                <button id="button-ajustes" class="buttons-nabvar-planes">
+                <button id="button-ajustes" class="buttons-nabvar-planes" type="submit">
                     <i class="fa-solid fa-gear"></i>
                     <span>Ajustes</span>
                 </button>
-                <button id="button-perfil" class="buttons-nabvar-planes">
+                <button id="button-perfil" class="buttons-nabvar-planes" type="submit">
                     <i class="fa-solid fa-user"></i>
                 </button>
             </div>
@@ -111,13 +111,135 @@
 
         </div>
 
-        <section id="seccion-opciones-guardar">
-            <div class="menu-guardar">Privado</div>
-            <div class="menu-guardar">Público</div>
-            <div class="menu-guardar">Descargar</div>
+        <section id="seccion-opciones-ajustes" style="display: none;">
+            <div class="div-opciones-ajustes">
+                <i class="fa-solid fa-share-nodes" style="color: greenyellow;"></i>
+                <span class="span-opciones-ajustes">Compartir</span>
+            </div>
+            <div class="div-opciones-ajustes">
+                <i class="fa-solid fa-user-plus" style="color: lightskyblue;"></i>
+                <span class="span-opciones-ajustes">Agregar colaboradores</span>
+            </div>
+            <div class="div-opciones-ajustes">
+                <i class="fa-solid fa-pen-to-square" style="color: darkorange;"></i>
+                <span class="span-opciones-ajustes">Cambiar nombre</span>
+            </div>
+            <div class="div-opciones-ajustes">
+                <i class="fa-solid fa-clipboard-list" style="color: aquamarine;"></i>
+                <span class="span-opciones-ajustes">Agregar descripción</span>
+            </div>
+            <div class="div-opciones-ajustes">
+                <i class="fa-solid fa-lock" style="color: gold;"></i>
+                <span class="span-opciones-ajustes">Privacidad</span>
+            </div>
+            <div class="div-opciones-ajustes">
+                <i class="fa-solid fa-heart" style="color: chartreuse;"></i>
+                <span class="span-opciones-ajustes">Agregar a favoritos</span>
+            </div>
+            <div class="div-opciones-ajustes">
+                <i class="fa-solid fa-language" style="color: darksalmon;"></i>
+                <span class="span-opciones-ajustes">Agregar lenguajes</span>
+            </div>
         </section>
 
-        <section id="seccion-comprar-plan" class="Section-Sign">
+        <section id="seccion-opciones-guardar" style="display: none;">
+            <div class="menu-guardar">
+                <span>Privado</span>
+                <i class="fa-solid fa-toggle-off" style="    font-size: 1.5rem; color: darkgray; margin-left: 6px;"></i>
+            </div>
+            <div class="menu-guardar">
+                <span>Público</span>
+                <i class="fa-solid fa-toggle-on" style="    font-size: 1.5rem; color: lightgreen; margin-left: 6px;"></i>
+            </div>
+            <div class="menu-guardar">
+                <span>Descargar</span>
+            </div>
+        </section>
+
+        <section id="seccion-menu-usuario" style="display: none;">
+            <div class="div-menu-usuario">
+                <i class="fa-regular fa-square-plus"></i>
+                <span class="span-menu-usuario">Nuevo Proyecto</span>
+            </div>
+            <div class="div-menu-usuario">
+                <i class="fa-solid fa-folder-plus"></i>
+                <span class="span-menu-usuario">Nueva Carpeta</span>
+            </div>
+            <div class="div-menu-usuario">
+                <i class="fa-solid fa-briefcase" style="color: aquamarine;"></i>
+                <span class="span-menu-usuario">Mis proyectos</span>
+            </div>
+            <div class="div-menu-usuario">
+                <i class="fa-solid fa-folder" style="color: gold;"></i>
+                <span class="span-menu-usuario">Mis carpetas</span>
+            </div>
+            <div class="div-menu-usuario">
+                <i class="fa-solid fa-user-group" style="color: aqua;"></i>
+                <span class="span-menu-usuario">Compartidos conmigo</span>
+            </div>
+            <div class="div-menu-usuario">
+                <i class="fa-solid fa-pen-nib" style="color: gold;"></i>
+                <span class="span-menu-usuario">Actualizar plan</span>
+            </div>
+            <div class="div-menu-usuario">
+                <i class="fa-solid fa-gear" style="color: darkorange;"></i>
+                <span class="span-menu-usuario">Configuraciones</span>
+            </div>
+            <div class="div-menu-usuario">
+                <i class="fa-solid fa-user" style="color: palegreen;"></i>
+                <span class="span-menu-usuario">Perfil</span>
+            </div>
+            <div class="div-menu-usuario">
+                <i class="fa-solid fa-arrow-right-from-bracket" style="color: lightsteelblue;"></i>
+                <span class="span-menu-usuario">Salir</span>
+            </div>
+        </section>
+
+        <section id="seccion-compartir" class="Section-Sign">
+            
+            <div id="contenedor-compartir">
+                <div style="display: flex; justify-content: space-between;">
+                    <span style="font-size: 1.2rem;">Compartir "Proyecto POO"</span>
+                    <div>
+                        <i class="fa-solid fa-rectangle-xmark" style="font-size: 1.5rem; color: #ff0000de;"></i>
+                    </div>
+                </div>
+    
+                <div>
+                    <input type="email" placeholder="Agregar personas" name="" id="email-compartir">
+                </div>
+    
+                <div style="margin-bottom: 20px;">
+                    <span>Personas que tienen acceso</span>
+                </div>
+    
+                <div style="display: flex; justify-content: space-between;">
+                    <div style="display: flex; justify-content: space-between;">
+                        <div>
+                            <img src="assets/img/sasuke.jpg" alt="" style="width: 50px; border-radius: 100%;">
+                        </div>
+                        <div style="margin-left: 10px;">
+                            <div>Sasuke (tú)</div>
+                            <div style="color: #8a8a8a; font-size: 0.9rem;">sasuke@gmail.com</div>
+                        </div>
+                    </div>
+                    <div style="color: #8a8a8a; font-size: 0.9rem;">
+                        Propietario
+                    </div>
+                </div>
+    
+                <div style="margin-top: 20px; display: flex; justify-content: space-between;">
+                    <button id="button-copiar-vinculo">
+                        <i class="fa-solid fa-link"></i>
+                        <span>Copiar vínculo</span>
+                    </button>
+                    <button id="button-listo">Listo</button>
+                </div>
+            </div>
+
+        </section>
+
+        <section id="seccion-comprar-plan" class="Section-Sign" style="display: none;">
             <div id="contenedor-form-plan">
                 <div>
                     <img id="img-form-comprar-plan" style="height: 94px; width: 100%;" src="assets/img/logo degradado.png" alt="">
@@ -165,7 +287,7 @@
             </div>
         </section>
 
-        <section id="seccion-comprar-plan-2" class="Section-Sign">
+        <section id="seccion-comprar-plan-2" class="Section-Sign" style="display: none;">
             <div id="contenedor-form-plan-2">
                 <div>
                     <img id="img-form-comprar-plan-2" style="height: 94px; width: 100%;" src="assets/img/logo degradado.png" alt="">
@@ -251,7 +373,8 @@
 
 
 
-    <script src="/assets/js/controlador.js"></script>
+    <!-- <script src="/assets/js/controlador.js"></script> -->
+    <script src="/assets/js/controller.js"></script>
 
 </body>
 </html>
