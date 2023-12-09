@@ -1,5 +1,11 @@
 document.getElementById('button-planes').addEventListener('click', () => {
   window.location.href = 'planes.html';
+  
+});
+
+document.getElementById('button-editor').addEventListener('click', () => {
+  window.location.href = 'editor.html';
+  
 });
 
 document.getElementById('opciones-guardar').addEventListener('click', () => {

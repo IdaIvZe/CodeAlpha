@@ -1,8 +1,3 @@
-document.getElementById('button-editor').addEventListener('click', () => {
-    window.location.href = 'editor.html';
-    
-  });
-
 document.getElementById('nuevo-proyecto').addEventListener('click', () => {
     const seccionNuevoProyecto = document.getElementById('seccion-nuevo-proyecto');
     const body = document.getElementById('body'); 
