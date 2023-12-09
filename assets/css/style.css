@@ -311,7 +311,7 @@ Estilos sección planes
     margin-top: -605px;
 }
 
-#contenedor-compartir {
+#contenedor-compartir, #contenedor-agregar-colaboradores {
     position: absolute;
     background-color: #fff;
     width: 308px;
@@ -323,18 +323,18 @@ Estilos sección planes
     left: 580px;
 }
 
-#seccion-compartir {
+#seccion-compartir, #seccion-agregar-colaboradores {
     top: -597px;
 }
 
-#email-compartir {
+#email-compartir, #email-colaboradores {
     width: 300px;
     height: 30px;
     margin-top: 20px;
     margin-bottom: 20px;
 }
 
-#button-copiar-vinculo {
+#button-copiar-vinculo, #copiar-vinculo-colaboradores {
     width: 130px;
     height: 30px;
     background-color: #fff;
@@ -343,7 +343,7 @@ Estilos sección planes
     border: 0.5px solid gray;
 }
 
-#button-listo {
+#button-listo, #button-agregar {
     width: 70px;
     height: 30px;
     border-radius: 15px;

@@ -195,7 +195,7 @@
             </div>
         </section>
 
-        <section id="seccion-compartir" class="Section-Sign">
+        <section id="seccion-compartir" class="Section-Sign" style="display: none;">
             
             <div id="contenedor-compartir">
                 <div style="display: flex; justify-content: space-between;">
@@ -234,6 +234,50 @@
                         <span>Copiar vínculo</span>
                     </button>
                     <button id="button-listo">Listo</button>
+                </div>
+            </div>
+
+        </section>
+
+        <section id="seccion-agregar-colaboradores" class="Section-Sign" style="display: none;">
+            
+            <div id="contenedor-agregar-colaboradores">
+                <div style="display: flex; justify-content: space-between;">
+                    <span style="font-size: 1.2rem;">Agregar colaboradores a "Proyecto POO"</span>
+                    <div>
+                        <i class="fa-solid fa-rectangle-xmark" style="font-size: 1.5rem; color: #ff0000de;"></i>
+                    </div>
+                </div>
+    
+                <div>
+                    <input type="email" placeholder="Agregar colaboradores" name="" id="email-colaboradores">
+                </div>
+    
+                <div style="margin-bottom: 20px;">
+                    <span>Colaboradores</span>
+                </div>
+    
+                <div style="display: flex; justify-content: space-between;">
+                    <div style="display: flex; justify-content: space-between;">
+                        <div>
+                            <img src="assets/img/sasuke.jpg" alt="" style="width: 50px; border-radius: 100%;">
+                        </div>
+                        <div style="margin-left: 10px;">
+                            <div>Sasuke (tú)</div>
+                            <div style="color: #8a8a8a; font-size: 0.9rem;">sasuke@gmail.com</div>
+                        </div>
+                    </div>
+                    <div style="color: #8a8a8a; font-size: 0.9rem;">
+                        Propietario
+                    </div>
+                </div>
+    
+                <div style="margin-top: 20px; display: flex; justify-content: space-between;">
+                    <button id="copiar-vinculo-colaboradores">
+                        <i class="fa-solid fa-link"></i>
+                        <span>Copiar vínculo</span>
+                    </button>
+                    <button id="button-agregar">Agregar</button>
                 </div>
             </div>
 
