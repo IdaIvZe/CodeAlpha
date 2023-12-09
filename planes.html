@@ -17,34 +17,35 @@
     </style>
 </head>
 <body id="body">
-    <section id="seccion-planes">
 
-        <nav id="nav-landing">
-            <div style="display: flex; align-items: center;">
-                <img id="img-logo" src="assets/img/Logo Morado.png" alt="">
-                <!-- <input id="buscador" class="buscador" type="search" placeholder="Buscar..."> -->
-            </div>
-            <div>
-                <button id="button-planes" class="buttons-nabvar-planes" type="submit">
-                    <span>Planes</span>
-                </button>
-                <button id="button-guardar" class="buttons-nabvar-planes" type="submit">
-                    <span>Guardar</span>
-                </button>
-                <button id="opciones-guardar" class="buttons-nabvar-planes" type="submit">
-                    <span><i class="fa-solid fa-angle-down"></i></span>
-                </button>
-                <button id="button-ajustes" class="buttons-nabvar-planes" type="submit">
-                    <i class="fa-solid fa-gear"></i>
-                    <span>Ajustes</span>
-                </button>
-                <button id="button-perfil" class="buttons-nabvar-planes" type="submit">
-                    <i class="fa-solid fa-user"></i>
-                </button>
-            </div>
-        </nav>
+    <nav id="nav-landing">
+        <div style="display: flex; align-items: center;">
+            <img id="img-logo" src="assets/img/Logo Morado.png" alt="">
+            <!-- <input id="buscador" class="buscador" type="search" placeholder="Buscar..."> -->
+        </div>
+        <div>
+            <button id="button-planes" class="buttons-nabvar-planes" type="submit">
+                <span>Planes</span>
+            </button>
+            <button id="button-guardar" class="buttons-nabvar-planes" type="submit">
+                <span>Guardar</span>
+            </button>
+            <button id="opciones-guardar" class="buttons-nabvar-planes" type="submit">
+                <span><i class="fa-solid fa-angle-down"></i></span>
+            </button>
+            <button id="button-ajustes" class="buttons-nabvar-planes" type="submit">
+                <i class="fa-solid fa-gear"></i>
+                <span>Ajustes</span>
+            </button>
+            <button id="button-perfil" class="buttons-nabvar-planes" type="submit">
+                <i class="fa-solid fa-user"></i>
+            </button>
+        </div>
+    </nav>
 
-        <div id="contenedor-planes">
+    <section id="seccion-planes" style="display: block;">
+
+        <div id="contenedor-planes" >
             <div id="plan-free" class="planes">
                 <div class="barra-color"></div>
                 <div class="nombre-plan">
@@ -111,307 +112,632 @@
 
         </div>
 
-        <section id="seccion-opciones-ajustes" style="display: none;">
-            <div class="div-opciones-ajustes">
-                <i class="fa-solid fa-share-nodes" style="color: greenyellow;"></i>
-                <span class="span-opciones-ajustes">Compartir</span>
-            </div>
-            <div class="div-opciones-ajustes">
-                <i class="fa-solid fa-user-plus" style="color: lightskyblue;"></i>
-                <span class="span-opciones-ajustes">Agregar colaboradores</span>
-            </div>
-            <div class="div-opciones-ajustes">
-                <i class="fa-solid fa-pen-to-square" style="color: darkorange;"></i>
-                <span class="span-opciones-ajustes">Cambiar nombre</span>
-            </div>
-            <div class="div-opciones-ajustes">
-                <i class="fa-solid fa-clipboard-list" style="color: aquamarine;"></i>
-                <span class="span-opciones-ajustes">Agregar descripción</span>
-            </div>
-            <div class="div-opciones-ajustes">
-                <i class="fa-solid fa-lock" style="color: gold;"></i>
-                <span class="span-opciones-ajustes">Privacidad</span>
-            </div>
-            <div class="div-opciones-ajustes">
-                <i class="fa-solid fa-heart" style="color: chartreuse;"></i>
-                <span class="span-opciones-ajustes">Agregar a favoritos</span>
-            </div>
-            <div class="div-opciones-ajustes">
-                <i class="fa-solid fa-language" style="color: darksalmon;"></i>
-                <span class="span-opciones-ajustes">Agregar lenguajes</span>
-            </div>
-        </section>
+    </section>
 
-        <section id="seccion-opciones-guardar" style="display: none;">
-            <div class="menu-guardar">
-                <span>Privado</span>
-                <i class="fa-solid fa-toggle-off" style="    font-size: 1.5rem; color: darkgray; margin-left: 6px;"></i>
+    <section id="seccion-comprar-plan-2" class="Section-Sign" style="display: none;">
+        <div id="contenedor-form-plan-2">
+            <div>
+                <img id="img-form-comprar-plan-2" style="height: 94px; width: 100%;" src="assets/img/logo degradado.png" alt="">
+                <div id="contenedor-comprar-plan-2"><span>Comprar Plan</span></div>
             </div>
-            <div class="menu-guardar">
-                <span>Público</span>
-                <i class="fa-solid fa-toggle-on" style="    font-size: 1.5rem; color: lightgreen; margin-left: 6px;"></i>
-            </div>
-            <div class="menu-guardar">
-                <span>Descargar</span>
-            </div>
-        </section>
-
-        <section id="seccion-menu-usuario" style="display: none;">
-            <div class="div-menu-usuario">
-                <i class="fa-regular fa-square-plus"></i>
-                <span class="span-menu-usuario">Nuevo Proyecto</span>
-            </div>
-            <div class="div-menu-usuario">
-                <i class="fa-solid fa-folder-plus"></i>
-                <span class="span-menu-usuario">Nueva Carpeta</span>
-            </div>
-            <div class="div-menu-usuario">
-                <i class="fa-solid fa-briefcase" style="color: aquamarine;"></i>
-                <span class="span-menu-usuario">Mis proyectos</span>
-            </div>
-            <div class="div-menu-usuario">
-                <i class="fa-solid fa-folder" style="color: gold;"></i>
-                <span class="span-menu-usuario">Mis carpetas</span>
-            </div>
-            <div class="div-menu-usuario">
-                <i class="fa-solid fa-user-group" style="color: aqua;"></i>
-                <span class="span-menu-usuario">Compartidos conmigo</span>
-            </div>
-            <div class="div-menu-usuario">
-                <i class="fa-solid fa-pen-nib" style="color: gold;"></i>
-                <span class="span-menu-usuario">Actualizar plan</span>
-            </div>
-            <div class="div-menu-usuario">
-                <i class="fa-solid fa-gear" style="color: darkorange;"></i>
-                <span class="span-menu-usuario">Configuraciones</span>
-            </div>
-            <div class="div-menu-usuario">
-                <i class="fa-solid fa-user" style="color: palegreen;"></i>
-                <span class="span-menu-usuario">Perfil</span>
-            </div>
-            <div class="div-menu-usuario">
-                <i class="fa-solid fa-arrow-right-from-bracket" style="color: lightsteelblue;"></i>
-                <span class="span-menu-usuario">Salir</span>
-            </div>
-        </section>
-
-        <section id="seccion-compartir" class="Section-Sign" style="display: none;">
-            
-            <div id="contenedor-compartir">
-                <div style="display: flex; justify-content: space-between;">
-                    <span style="font-size: 1.2rem;">Compartir "Proyecto POO"</span>
-                    <div>
-                        <i class="fa-solid fa-rectangle-xmark" style="font-size: 1.5rem; color: #ff0000de;"></i>
+            <div>
+                <form id="form-comprar-plan-2" action="">
+                    <div class="sign-form div-form-comprar-plan">
+                        <span>Precios</span>
+                        <div id="contenedor-precios">
+                            <input type="radio" name="" id="checkbox-precios" style="margin-left: 10px;">
+                            <span style="margin-left: 10px;">$25 Facturado anualmente</span>
+                        </div>
+                        <!-- <input type="text" class="form-comprar-planes"> -->
                     </div>
-                </div>
-    
-                <div>
-                    <input type="email" placeholder="Agregar personas" name="" id="email-compartir">
-                </div>
-    
-                <div style="margin-bottom: 20px;">
-                    <span>Personas que tienen acceso</span>
-                </div>
-    
-                <div style="display: flex; justify-content: space-between;">
-                    <div style="display: flex; justify-content: space-between;">
+                    <div class="sign-form div-form-comprar-plan" style="margin-top: 25px; margin-bottom: 10px;">
+                        <input type="radio">
+                        <span>Tarjeta de crédito</span>
+                        <input type="radio">
+                        <span>PayPal</span>
+                    </div>
+                    
+                    <div class="sign-form div-form-comprar-plan">
+                        <span>Número de trajeta de crédito</span>
+                        <input type="password" placeholder=".... .... .... ...." class="form-comprar-planes">
+                    </div>
+
+                    <div class="div-form-comprar-plan" style="margin-top: 20px;">
+                        <div class="div-form-comprar-plan" style="display: flex; justify-content: space-between;">
+                            <span>Vencimiento</span>
+                            <span>código CVC</span>
+                        </div>
                         <div>
-                            <img src="assets/img/sasuke.jpg" alt="" style="width: 50px; border-radius: 100%;">
-                        </div>
-                        <div style="margin-left: 10px;">
-                            <div>Sasuke (tú)</div>
-                            <div style="color: #8a8a8a; font-size: 0.9rem;">sasuke@gmail.com</div>
+                            <select name="" id="select-mes" class="form-vencimiento">
+                                <option value="">MM</option>
+                                <option value="">Enero</option>
+                                <option value="">Febrero</option>
+                                <option value="">Marzo</option>
+                                <option value="">Abril</option>
+                                <option value="">Mayo</option>
+                                <option value="">Junio</option>
+                                <option value="">Julio</option>
+                                <option value="">Agosto</option>
+                                <option value="">Septiembre</option>
+                                <option value="">Octubre</option>
+                                <option value="">Noviembre</option>
+                                <option value="">Diciembre</option>
+                            </select>
+
+                            <select name="" id="select-anyo" class="form-vencimiento">
+                                <option value="">AA</option>
+                                <option value="">2023</option>
+                                <option value="">2024</option>
+                                <option value="">2025</option>
+                                <option value="">2026</option>
+                                <option value="">2027</option>
+                                <option value="">2028</option>
+                                <option value="">2029</option>
+                                <option value="">2030</option>
+                            </select>
+
+                            <input type="text" class="form-vencimiento" style="height: 30px;">
                         </div>
                     </div>
-                    <div style="color: #8a8a8a; font-size: 0.9rem;">
-                        Propietario
+
+                    <div class="div-form-comprar-plan" style="margin-top: 20px; margin-bottom: 15px;">Cargo total: $25</div>
+
+                    <button id="button-comprar" class="button-sign" type="submit">Comprar</button>
+
+                    <div class="checkbox" id="terminos-condiciones-2">
+                        <!-- <input type="checkbox" id="miCheckbox2" name="miCheckbox" required> -->
+                        <label for="miCheckbox">Al hacer click en "Comprar", acepta <a class="terminos" href="#"> los términos y condiciones del servicio</a>
+                        </label>
                     </div>
-                </div>
     
-                <div style="margin-top: 20px; display: flex; justify-content: space-between;">
-                    <button id="button-copiar-vinculo">
-                        <i class="fa-solid fa-link"></i>
-                        <span>Copiar vínculo</span>
-                    </button>
-                    <button id="button-listo">Listo</button>
-                </div>
+                </form>
             </div>
+        </div>
+    </section>
 
-        </section>
+    <section id="seccion-comprar-plan" class="Section-Sign" style="display: none;">
+        <div id="contenedor-form-plan">
+            <div>
+                <img id="img-form-comprar-plan" style="height: 94px; width: 100%;" src="assets/img/logo degradado.png" alt="">
+                <div id="contenedor-comprar-plan"><span>Comprar Plan</span></div>
+            </div>
+            <div>
+                <form id="form-comprar-plan" action="">
+                    <div class="sign-form div-form-comprar-plan">
+                        <span>Su nombre</span>
+                        <input type="text" class="form-comprar-planes">
+                    </div>
+                    <div class="sign-form div-form-comprar-plan">
+                        <span>Elegir un nombre de usuario</span>
+                        <input type="text" class="form-comprar-planes">
+                    </div>
+                    <div class="sign-form div-form-comprar-plan">
+                        <span>Correo electrónico</span>
+                        <input type="email" class="form-comprar-planes">
+                    </div>
+                    <div class="sign-form div-form-comprar-plan">
+                        <span>Contraseña</span>
+                        <input type="password" class="form-comprar-planes">
+                    </div>
 
-        <section id="seccion-agregar-colaboradores" class="Section-Sign" style="display: none;">
+                    <div class="div-form-comprar-plan" style="margin-top: 5px;">
+                        <span>Su contraseña debe:</span>
+                        <ul>
+                            <li>Incluir una letra mayúscula y minúscula</li>
+                            <li>Incluir un número</li>
+                            <li>Incluir al menos un caracter especial</li>
+                            <li>Tener entre 8 y 13 caracteres</li>
+                        </ul>
+                    </div>
+
+                    <button id="button-siguiente" class="button-sign" type="submit">Siguiente</button>
+
+                    <div class="checkbox" id="terminos-condiciones">
+                        <!-- <input type="checkbox" id="miCheckbox2" name="miCheckbox" required> -->
+                        <label for="miCheckbox">Al registrarse, acepta <a class="terminos" href="#"> los términos y condiciones del servicio</a>
+                        </label>
+                    </div>
+    
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <section id="seccion-nuevo-proyecto" class="Section-Sign" style="display: none;">
+        <div id="contenedor-nuevo-proyecto">
+            <div style="margin-bottom: 20px;">
+                <span style="font-size: 1.4rem;">Nuevo proyecto</span>
+            </div>
+            <div>
+                <input type="text" placeholder="Proyecto sin título" id="input-nuevo-proyecto">
+            </div>
+            <div style="display: flex; justify-content: end;">
+                <button id="button-cancelar-nuevo-proyecto">Cancelar</button>
+                <button id="button-crear-nuevo-proyecto">Crear</button>
+            </div>
+        </div>
+    </section>
+
+    <section id="seccion-nueva-carpeta" class="Section-Sign" style="display: none;">
+        <div id="contenedor-nueva-carpeta">
+            <div style="margin-bottom: 20px;">
+                <span style="font-size: 1.4rem;">Carpeta nueva</span>
+            </div>
+            <div>
+                <input type="text" placeholder="Carpeta sin título" id="input-nueva-carpeta">
+            </div>
+            <div style="display: flex; justify-content: end;">
+                <button id="button-cancelar-nueva-carpeta">Cancelar</button>
+                <button id="button-crear-nueva-carpeta">Crear</button>
+            </div>
+        </div>
+    </section>
+
+    <section id="seccion-agregar-colaboradores" class="Section-Sign" style="display: none;">
             
-            <div id="contenedor-agregar-colaboradores">
+        <div id="contenedor-agregar-colaboradores">
+            <div style="display: flex; justify-content: space-between;">
+                <span style="font-size: 1.2rem;">Agregar colaboradores a "Proyecto POO"</span>
+                <div>
+                    <i class="fa-solid fa-rectangle-xmark" style="font-size: 1.5rem; color: #ff0000de;"></i>
+                </div>
+            </div>
+
+            <div>
+                <input type="email" placeholder="Agregar colaboradores" name="" id="email-colaboradores">
+            </div>
+
+            <div style="margin-bottom: 20px;">
+                <span>Colaboradores</span>
+            </div>
+
+            <div style="display: flex; justify-content: space-between;">
                 <div style="display: flex; justify-content: space-between;">
-                    <span style="font-size: 1.2rem;">Agregar colaboradores a "Proyecto POO"</span>
                     <div>
-                        <i class="fa-solid fa-rectangle-xmark" style="font-size: 1.5rem; color: #ff0000de;"></i>
+                        <img src="assets/img/sasuke.jpg" alt="" style="width: 50px; border-radius: 100%;">
+                    </div>
+                    <div style="margin-left: 10px;">
+                        <div>Sasuke (tú)</div>
+                        <div style="color: #8a8a8a; font-size: 0.9rem;">sasuke@gmail.com</div>
                     </div>
                 </div>
-    
+                <div style="color: #8a8a8a; font-size: 0.9rem;">
+                    Propietario
+                </div>
+            </div>
+
+            <div style="margin-top: 20px; display: flex; justify-content: space-between;">
+                <button id="copiar-vinculo-colaboradores">
+                    <i class="fa-solid fa-link"></i>
+                    <span>Copiar vínculo</span>
+                </button>
+                <button id="button-agregar">Agregar</button>
+            </div>
+        </div>
+
+    </section>
+
+    <section id="seccion-compartir" class="Section-Sign" style="display: none;">
+            
+        <div id="contenedor-compartir">
+            <div style="display: flex; justify-content: space-between;">
+                <span style="font-size: 1.2rem;">Compartir "Proyecto POO"</span>
                 <div>
-                    <input type="email" placeholder="Agregar colaboradores" name="" id="email-colaboradores">
+                    <i class="fa-solid fa-rectangle-xmark" style="font-size: 1.5rem; color: #ff0000de;"></i>
                 </div>
-    
-                <div style="margin-bottom: 20px;">
-                    <span>Colaboradores</span>
-                </div>
-    
+            </div>
+
+            <div>
+                <input type="email" placeholder="Agregar personas" name="" id="email-compartir">
+            </div>
+
+            <div style="margin-bottom: 20px;">
+                <span>Personas que tienen acceso</span>
+            </div>
+
+            <div style="display: flex; justify-content: space-between;">
                 <div style="display: flex; justify-content: space-between;">
-                    <div style="display: flex; justify-content: space-between;">
-                        <div>
-                            <img src="assets/img/sasuke.jpg" alt="" style="width: 50px; border-radius: 100%;">
-                        </div>
-                        <div style="margin-left: 10px;">
-                            <div>Sasuke (tú)</div>
-                            <div style="color: #8a8a8a; font-size: 0.9rem;">sasuke@gmail.com</div>
-                        </div>
+                    <div>
+                        <img src="assets/img/sasuke.jpg" alt="" style="width: 50px; border-radius: 100%;">
                     </div>
-                    <div style="color: #8a8a8a; font-size: 0.9rem;">
-                        Propietario
+                    <div style="margin-left: 10px;">
+                        <div>Sasuke (tú)</div>
+                        <div style="color: #8a8a8a; font-size: 0.9rem;">sasuke@gmail.com</div>
                     </div>
                 </div>
-    
-                <div style="margin-top: 20px; display: flex; justify-content: space-between;">
-                    <button id="copiar-vinculo-colaboradores">
-                        <i class="fa-solid fa-link"></i>
-                        <span>Copiar vínculo</span>
-                    </button>
-                    <button id="button-agregar">Agregar</button>
+                <div style="color: #8a8a8a; font-size: 0.9rem;">
+                    Propietario
                 </div>
             </div>
 
-        </section>
+            <div style="margin-top: 20px; display: flex; justify-content: space-between;">
+                <button id="button-copiar-vinculo">
+                    <i class="fa-solid fa-link"></i>
+                    <span>Copiar vínculo</span>
+                </button>
+                <button id="button-listo">Listo</button>
+            </div>
+        </div>
 
-        <section id="seccion-comprar-plan" class="Section-Sign" style="display: none;">
-            <div id="contenedor-form-plan">
+    </section>
+
+    <section id="seccion-opciones-guardar" style="display: none;">
+        <div class="menu-guardar">
+            <span>Privado</span>
+            <i class="fa-solid fa-toggle-off" style="    font-size: 1.5rem; color: darkgray; margin-left: 6px;"></i>
+        </div>
+        <div class="menu-guardar">
+            <span>Público</span>
+            <i class="fa-solid fa-toggle-on" style="    font-size: 1.5rem; color: lightgreen; margin-left: 6px;"></i>
+        </div>
+        <div class="menu-guardar">
+            <span>Descargar</span>
+        </div>
+    </section>
+
+    <section id="seccion-menu-usuario" style="display: none;">
+        <div id="nuevo-proyecto" class="div-menu-usuario">
+            <i class="fa-regular fa-square-plus"></i>
+            <span class="span-menu-usuario">Nuevo Proyecto</span>
+        </div>
+        <div id="nueva-carpeta" class="div-menu-usuario">
+            <i class="fa-solid fa-folder-plus"></i>
+            <span class="span-menu-usuario">Nueva Carpeta</span>
+        </div>
+        <div id="nuevo-archivo" class="div-menu-usuario">
+            <i class="fa-regular fa-file-code"></i>
+            <span class="span-menu-usuario">Nuevo archivo</span>
+        </div>
+        <div id="mis-proyectos" class="div-menu-usuario">
+            <i class="fa-solid fa-briefcase" style="color: aquamarine;"></i>
+            <span class="span-menu-usuario">Mis proyectos</span>
+        </div>
+        <div id="mis-carpetas" class="div-menu-usuario">
+            <i class="fa-solid fa-folder" style="color: gold;"></i>
+            <span class="span-menu-usuario">Mis carpetas</span>
+        </div>
+        <div id="compartidos-conmigo" class="div-menu-usuario">
+            <i class="fa-solid fa-user-group" style="color: aqua;"></i>
+            <span class="span-menu-usuario">Compartidos conmigo</span>
+        </div>
+        <div id="actualizar-plan" class="div-menu-usuario">
+            <i class="fa-solid fa-pen-nib" style="color: gold;"></i>
+            <span class="span-menu-usuario">Actualizar plan</span>
+        </div>
+        <div id="configuraciones" class="div-menu-usuario">
+            <i class="fa-solid fa-gear" style="color: darkorange;"></i>
+            <span class="span-menu-usuario">Configuraciones</span>
+        </div>
+        <div id="perfil" class="div-menu-usuario">
+            <i class="fa-solid fa-user" style="color: palegreen;"></i>
+            <span class="span-menu-usuario">Perfil</span>
+        </div>
+        <div id="salir" class="div-menu-usuario">
+            <i class="fa-solid fa-arrow-right-from-bracket" style="color: lightsteelblue;"></i>
+            <span class="span-menu-usuario">Salir</span>
+        </div>
+    </section>
+
+    <section id="seccion-opciones-ajustes" style="display: none;">
+        <div class="div-opciones-ajustes">
+            <i class="fa-solid fa-share-nodes" style="color: greenyellow;"></i>
+            <span class="span-opciones-ajustes">Compartir</span>
+        </div>
+        <div class="div-opciones-ajustes">
+            <i class="fa-solid fa-user-plus" style="color: lightskyblue;"></i>
+            <span class="span-opciones-ajustes">Agregar colaboradores</span>
+        </div>
+        <div class="div-opciones-ajustes">
+            <i class="fa-solid fa-pen-to-square" style="color: darkorange;"></i>
+            <span class="span-opciones-ajustes">Cambiar nombre</span>
+        </div>
+        <div class="div-opciones-ajustes">
+            <i class="fa-solid fa-clipboard-list" style="color: aquamarine;"></i>
+            <span class="span-opciones-ajustes">Agregar descripción</span>
+        </div>
+        <div class="div-opciones-ajustes">
+            <i class="fa-solid fa-lock" style="color: gold;"></i>
+            <span class="span-opciones-ajustes">Privacidad</span>
+        </div>
+        <div class="div-opciones-ajustes">
+            <i class="fa-solid fa-heart" style="color: chartreuse;"></i>
+            <span class="span-opciones-ajustes">Agregar a favoritos</span>
+        </div>
+        <div class="div-opciones-ajustes">
+            <i class="fa-solid fa-language" style="color: darksalmon;"></i>
+            <span class="span-opciones-ajustes">Agregar lenguajes</span>
+        </div>
+    </section>
+
+    <section id="seccion-mis-proyectos" style="display: none;">
+        <div id="contenedor-proyectos">
+            <div style="margin-bottom: 10px; font-size: 1.3rem;">
+                <i class="fa-solid fa-arrow-left"></i>
+            </div>
+            <div style="margin-bottom: 25px;">
+                <span style="font-size: 1.5rem;">Mis proyectos</span>
+            </div>
+            <div>
+                <span>Nombre</span>
+                <span style="margin-left: 600px;">Propietario</span>
+            </div>
+            <hr>
+            <div style="margin-top: 15px; display: flex;">
                 <div>
-                    <img id="img-form-comprar-plan" style="height: 94px; width: 100%;" src="assets/img/logo degradado.png" alt="">
-                    <div id="contenedor-comprar-plan"><span>Comprar Plan</span></div>
+                    <i class="fa-solid fa-file-lines" style="color: blueviolet; font-size: 1.2rem;"></i>
+                    <span>Proyecto POO</span>
                 </div>
-                <div>
-                    <form id="form-comprar-plan" action="">
-                        <div class="sign-form div-form-comprar-plan">
-                            <span>Su nombre</span>
-                            <input type="text" class="form-comprar-planes">
-                        </div>
-                        <div class="sign-form div-form-comprar-plan">
-                            <span>Elegir un nombre de usuario</span>
-                            <input type="text" class="form-comprar-planes">
-                        </div>
-                        <div class="sign-form div-form-comprar-plan">
-                            <span>Correo electrónico</span>
-                            <input type="email" class="form-comprar-planes">
-                        </div>
-                        <div class="sign-form div-form-comprar-plan">
-                            <span>Contraseña</span>
-                            <input type="password" class="form-comprar-planes">
-                        </div>
-
-                        <div class="div-form-comprar-plan" style="margin-top: 5px;">
-                            <span>Su contraseña debe:</span>
-                            <ul>
-                                <li>Incluir una letra mayúscula y minúscula</li>
-                                <li>Incluir un número</li>
-                                <li>Incluir al menos un caracter especial</li>
-                                <li>Tener entre 8 y 13 caracteres</li>
-                            </ul>
-                        </div>
-
-                        <button id="button-siguiente" class="button-sign" type="submit">Siguiente</button>
-
-                        <div class="checkbox" id="terminos-condiciones">
-                            <!-- <input type="checkbox" id="miCheckbox2" name="miCheckbox" required> -->
-                            <label for="miCheckbox">Al registrarse, acepta <a class="terminos" href="#"> los términos y condiciones del servicio</a>
-                            </label>
-                        </div>
-        
-                    </form>
+                <div class="div-mis-proyectos">
+                    <div><i class="fa-solid fa-user" style="color: darkgray;"></i></div>
+                    <span style="margin-left: 8px">Yo</span>
+                </div>
+                <div class="divs-ellipsis">
+                    <i class="fa-solid fa-ellipsis"></i>
                 </div>
             </div>
-        </section>
+            <hr>
 
-        <section id="seccion-comprar-plan-2" class="Section-Sign" style="display: none;">
-            <div id="contenedor-form-plan-2">
+            <div style="margin-top: 15px; display: flex;">
                 <div>
-                    <img id="img-form-comprar-plan-2" style="height: 94px; width: 100%;" src="assets/img/logo degradado.png" alt="">
-                    <div id="contenedor-comprar-plan-2"><span>Comprar Plan</span></div>
+                    <i class="fa-solid fa-file-lines" style="color: blueviolet; font-size: 1.2rem;"></i>
+                    <span>Proyecto POO</span>
                 </div>
-                <div>
-                    <form id="form-comprar-plan-2" action="">
-                        <div class="sign-form div-form-comprar-plan">
-                            <span>Precios</span>
-                            <div id="contenedor-precios">
-                                <input type="radio" name="" id="checkbox-precios" style="margin-left: 10px;">
-                                <span style="margin-left: 10px;">$25 Facturado anualmente</span>
-                            </div>
-                            <!-- <input type="text" class="form-comprar-planes"> -->
-                        </div>
-                        <div class="sign-form div-form-comprar-plan" style="margin-top: 25px; margin-bottom: 10px;">
-                            <input type="radio">
-                            <span>Tarjeta de crédito</span>
-                            <input type="radio">
-                            <span>PayPal</span>
-                        </div>
-                        
-                        <div class="sign-form div-form-comprar-plan">
-                            <span>Número de trajeta de crédito</span>
-                            <input type="password" placeholder=".... .... .... ...." class="form-comprar-planes">
-                        </div>
-
-                        <div class="div-form-comprar-plan" style="margin-top: 20px;">
-                            <div class="div-form-comprar-plan" style="display: flex; justify-content: space-between;">
-                                <span>Vencimiento</span>
-                                <span>código CVC</span>
-                            </div>
-                            <div>
-                                <select name="" id="select-mes" class="form-vencimiento">
-                                    <option value="">MM</option>
-                                    <option value="">Enero</option>
-                                    <option value="">Febrero</option>
-                                    <option value="">Marzo</option>
-                                    <option value="">Abril</option>
-                                    <option value="">Mayo</option>
-                                    <option value="">Junio</option>
-                                    <option value="">Julio</option>
-                                    <option value="">Agosto</option>
-                                    <option value="">Septiembre</option>
-                                    <option value="">Octubre</option>
-                                    <option value="">Noviembre</option>
-                                    <option value="">Diciembre</option>
-                                </select>
-
-                                <select name="" id="select-anyo" class="form-vencimiento">
-                                    <option value="">AA</option>
-                                    <option value="">2023</option>
-                                    <option value="">2024</option>
-                                    <option value="">2025</option>
-                                    <option value="">2026</option>
-                                    <option value="">2027</option>
-                                    <option value="">2028</option>
-                                    <option value="">2029</option>
-                                    <option value="">2030</option>
-                                </select>
-
-                                <input type="text" class="form-vencimiento" style="height: 30px;">
-                            </div>
-                        </div>
-
-                        <div class="div-form-comprar-plan" style="margin-top: 20px; margin-bottom: 15px;">Cargo total: $25</div>
-
-                        <button id="button-comprar" class="button-sign" type="submit">Comprar</button>
-
-                        <div class="checkbox" id="terminos-condiciones-2">
-                            <!-- <input type="checkbox" id="miCheckbox2" name="miCheckbox" required> -->
-                            <label for="miCheckbox">Al hacer click en "Comprar", acepta <a class="terminos" href="#"> los términos y condiciones del servicio</a>
-                            </label>
-                        </div>
-        
-                    </form>
+                <div class="div-mis-proyectos">
+                    <div><i class="fa-solid fa-user" style="color: darkgray;"></i></div>
+                    <span style="margin-left: 8px">Yo</span>
+                </div>
+                <div class="divs-ellipsis">
+                    <i class="fa-solid fa-ellipsis"></i>
                 </div>
             </div>
-        </section>
+            <hr>
 
+            <div style="margin-top: 15px; display: flex;">
+                <div>
+                    <i class="fa-solid fa-file-lines" style="color: blueviolet; font-size: 1.2rem;"></i>
+                    <span>Proyecto POO</span>
+                </div>
+                <div class="div-mis-proyectos">
+                    <div><i class="fa-solid fa-user" style="color: darkgray;"></i></div>
+                    <span style="margin-left: 8px">Yo</span>
+                </div>
+                <div class="divs-ellipsis">
+                    <i class="fa-solid fa-ellipsis"></i>
+                </div>
+            </div>
+            <hr>
+
+            <div style="margin-top: 15px; display: flex;">
+                <div>
+                    <i class="fa-solid fa-file-lines" style="color: blueviolet; font-size: 1.2rem;"></i>
+                    <span>Proyecto POO</span>
+                </div>
+                <div class="div-mis-proyectos">
+                    <div><i class="fa-solid fa-user" style="color: darkgray;"></i></div>
+                    <span style="margin-left: 8px">Yo</span>
+                </div>
+                <div class="divs-ellipsis">
+                    <i class="fa-solid fa-ellipsis"></i>
+                </div>
+            </div>
+            <hr>
+
+            <div style="margin-top: 15px; display: flex;">
+                <div>
+                    <i class="fa-solid fa-file-lines" style="color: blueviolet; font-size: 1.2rem;"></i>
+                    <span>Proyecto POO</span>
+                </div>
+                <div class="div-mis-proyectos">
+                    <div><i class="fa-solid fa-user" style="color: darkgray;"></i></div>
+                    <span style="margin-left: 8px">Yo</span>
+                </div>
+                <div class="divs-ellipsis">
+                    <i class="fa-solid fa-ellipsis"></i>
+                </div>
+            </div>
+            <hr>
+        </div>
+
+    </section>
+
+    <section id="seccion-mis-carpetas" style="display: none;">
+        <div id="contenedor-carpetas">
+            <div style="margin-bottom: 10px; font-size: 1.3rem;">
+                <i class="fa-solid fa-arrow-left"></i>
+            </div>
+            <div style="margin-bottom: 25px;">
+                <span style="font-size: 1.5rem;">Mis carpetas</span>
+            </div>
+            <div>
+                <span>Nombre</span>
+                <span style="margin-left: 600px;">Propietario</span>
+            </div>
+            <hr>
+            <div style="margin-top: 15px; display: flex;">
+                <div>
+                    <i class="fa-solid fa-folder" style="color: gold; font-size: 1.2rem;"></i>
+                    <span>Proyecto POO</span>
+                </div>
+                <div class="div-mis-proyectos">
+                    <div><i class="fa-solid fa-user" style="color: darkgray;"></i></div>
+                    <!-- <i class="fa-solid fa-circle-user"></i> -->
+                    <span style="margin-left: 8px">Yo</span>
+                </div>
+                <div class="divs-ellipsis">
+                    <i class="fa-solid fa-ellipsis"></i>
+                </div>
+            </div>
+            <hr>
+
+            <div style="margin-top: 15px; display: flex;">
+                <div>
+                    <i class="fa-solid fa-folder" style="color: gold; font-size: 1.2rem;"></i>
+                    <span>Proyecto POO</span>
+                </div>
+                <div class="div-mis-proyectos">
+                    <div><i class="fa-solid fa-user" style="color: darkgray;"></i></div>
+                    <span style="margin-left: 8px">Yo</span>
+                </div>
+                <div class="divs-ellipsis">
+                    <i class="fa-solid fa-ellipsis"></i>
+                </div>
+            </div>
+            <hr>
+
+            <div style="margin-top: 15px; display: flex;">
+                <div>
+                    <i class="fa-solid fa-folder" style="color: gold; font-size: 1.2rem;"></i>
+                    <span>Proyecto POO</span>
+                </div>
+                <div class="div-mis-proyectos">
+                    <div><i class="fa-solid fa-user" style="color: darkgray;"></i></div>
+                    <span style="margin-left: 8px">Yo</span>
+                </div>
+                <div class="divs-ellipsis">
+                    <i class="fa-solid fa-ellipsis"></i>
+                </div>
+            </div>
+            <hr>
+
+            <div style="margin-top: 15px; display: flex;">
+                <div>
+                    <i class="fa-solid fa-folder" style="color: gold; font-size: 1.2rem;"></i>
+                    <span>Proyecto POO</span>
+                </div>
+                <div class="div-mis-proyectos">
+                    <div><i class="fa-solid fa-user" style="color: darkgray;"></i></div>
+                    <span style="margin-left: 8px">Yo</span>
+                </div>
+                <div class="divs-ellipsis">
+                    <i class="fa-solid fa-ellipsis"></i>
+                </div>
+            </div>
+            <hr>
+
+            <div style="margin-top: 15px; display: flex;">
+                <div>
+                    <i class="fa-solid fa-folder" style="color: gold; font-size: 1.2rem;"></i>
+                    <span>Proyecto POO</span>
+                </div>
+                <div class="div-mis-proyectos">
+                    <div><i class="fa-solid fa-user" style="color: darkgray;"></i></div>
+                    <span style="margin-left: 8px">Yo</span>
+                </div>
+                <div class="divs-ellipsis">
+                    <i class="fa-solid fa-ellipsis"></i>
+                </div>
+            </div>
+            <hr>
+        </div>
+
+    </section>
+
+    <section id="seccion-compartidos-conmigo" style="display: none;">
+        <div id="contenedor-compartidos-conmigo">
+            <div style="margin-bottom: 10px; font-size: 1.3rem;">
+                <i class="fa-solid fa-arrow-left"></i>
+            </div>
+            <div style="margin-bottom: 25px;">
+                <span style="font-size: 1.5rem;">Compartidos conmigo</span>
+            </div>
+            <div>
+                <span>Nombre</span>
+                <span style="margin-left: 600px;">Propietario</span>
+            </div>
+            <hr>
+            <div style="margin-top: 15px; display: flex;">
+                <div>
+                    <i class="fa-solid fa-file-lines" style="color: blueviolet; font-size: 1.2rem;"></i>
+                    <span>Proyecto POO</span>
+                </div>
+                <div class="div-mis-proyectos">
+                    <div><i class="fa-solid fa-user" style="color: darkgray;"></i></div>
+                    <span style="margin-left: 8px">Gokú</span>
+                </div>
+                <div class="divs-ellipsis">
+                    <i class="fa-solid fa-ellipsis"></i>
+                </div>
+            </div>
+            <hr>
+
+            <div style="margin-top: 15px; display: flex;">
+                <div>
+                    <i class="fa-solid fa-folder" style="color: gold; font-size: 1.2rem;"></i>
+                    <span>Carpeta de entrega final</span>
+                </div>
+                <div class="div-mis-proyectos">
+                    <div><i class="fa-solid fa-user" style="color: darkgray;"></i></div>
+                    <span style="margin-left: 8px">Naruto</span>
+                </div>
+                <div class="divs-ellipsis">
+                    <i class="fa-solid fa-ellipsis"></i>
+                </div>
+            </div>
+            <hr>
+
+            <div style="margin-top: 15px; display: flex;">
+                <div>
+                    <i class="fa-solid fa-file-lines" style="color: blueviolet; font-size: 1.2rem;"></i>
+                    <span>JSON base de datos</span>
+                </div>
+                <div class="div-mis-proyectos">
+                    <div><i class="fa-solid fa-user" style="color: darkgray;"></i></div>
+                    <span style="margin-left: 8px">Sasuke</span>
+                </div>
+                <div class="divs-ellipsis">
+                    <i class="fa-solid fa-ellipsis"></i>
+                </div>
+            </div>
+            <hr>
+
+            <div style="margin-top: 15px; display: flex;">
+                <div>
+                    <i class="fa-solid fa-folder" style="color: gold; font-size: 1.2rem;"></i>
+                    <span>Proyecto primera entrega</span>
+                </div>
+                <div class="div-mis-proyectos">
+                    <div><i class="fa-solid fa-user" style="color: darkgray;"></i></div>
+                    <span style="margin-left: 8px">Gokú</span>
+                </div>
+                <div class="divs-ellipsis">
+                    <i class="fa-solid fa-ellipsis"></i>
+                </div>
+            </div>
+            <hr>
+
+            <div style="margin-top: 15px; display: flex;">
+                <div>
+                    <i class="fa-solid fa-folder" style="color: gold; font-size: 1.2rem;"></i>
+                    <span>Documentos importantes</span>
+                </div>
+                <div class="div-mis-proyectos">
+                    <div><i class="fa-solid fa-user" style="color: darkgray;"></i></div>
+                    <span style="margin-left: 8px">Sasuke</span>
+                </div>
+                <div class="divs-ellipsis">
+                    <i class="fa-solid fa-ellipsis"></i>
+                </div>
+            </div>
+            <hr>
+        </div>
+
+    </section>
+
+    <section id="seccion-opciones-ellipsis" class="Section-Sing" style="display: none;">
+        <div id="contenedor-opciones-ellipsis">
+            <div style="margin-bottom: 10px;">
+                <span>Compartir</span>
+            </div>
+            <div style="margin-bottom: 10px;">
+                <span>Agregar Colaborador</span>
+            </div>
+            <div style="margin-bottom: 10px;">
+                <span>Editar</span>
+            </div>
+            <div style="margin-bottom: 10px;">
+                <span>Eliminar</span>
+            </div>
+        </div>
     </section>
 
 

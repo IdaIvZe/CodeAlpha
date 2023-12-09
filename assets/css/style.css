@@ -278,11 +278,12 @@ Estilos sección planes
     color: #fff;
     font-family: system-ui;
     margin-left: 87.5%;
-    margin-top: -605px;
+    margin-top: -1209px;
     border-radius: 0px 10px 10px 10px;
     padding-left: 6px;
     padding-top: 5px;
     display: none;
+    cursor: pointer;
 }
 
 #seccion-menu-usuario {
@@ -295,7 +296,8 @@ Estilos sección planes
     color: #fff;
     font-family: system-ui;
     margin-left: 83.5%;
-    margin-top: -605px;
+    margin-top: -1209px;
+    cursor: pointer;
 }
 
 #seccion-opciones-ajustes {
@@ -308,7 +310,8 @@ Estilos sección planes
     color: #fff;
     font-family: system-ui;
     margin-left: 78%;
-    margin-top: -605px;
+    margin-top: -1209px;
+    cursor: pointer;
 }
 
 #contenedor-compartir, #contenedor-agregar-colaboradores {
@@ -321,10 +324,53 @@ Estilos sección planes
     font-family: system-ui;
     margin-top: 100px;
     left: 580px;
+    /* cursor: pointer; */
 }
 
-#seccion-compartir, #seccion-agregar-colaboradores {
-    top: -597px;
+#contenedor-nueva-carpeta, #contenedor-nuevo-proyecto {
+    position: absolute;
+    background-color: #fff;
+    width: 260px;
+    height: 180px;
+    padding: 20px;;
+    border-radius: 5px;
+    font-family: system-ui;
+    margin-top: 100px;
+    left: 580px;
+    /* cursor: pointer; */
+}
+
+#input-nueva-carpeta, #input-nuevo-proyecto {
+    width: 250px;
+    height: 30px;
+    border-radius: 5px;
+    margin-bottom: 40px;
+    border: 0.5px solid;
+}
+
+#button-cancelar-nueva-carpeta, #button-cancelar-nuevo-proyecto {
+    margin-right: 20px;
+    width: 80px;
+    height: 30px;
+    border-radius: 7px;
+    border: 0px;
+    background-color: #a071e8;
+    color: #fff;
+    cursor: pointer;
+}
+
+#button-crear-nueva-carpeta, #button-crear-nuevo-proyecto {
+    width: 60px;
+    height: 30px;
+    border-radius: 7px;
+    border: 0px;
+    background-color: #a071e8;
+    color: #fff;
+    cursor: pointer;
+}
+
+#seccion-compartir, #seccion-agregar-colaboradores, #seccion-nueva-carpeta, #seccion-nuevo-proyecto {
+    top: -1200px;
 }
 
 #email-compartir, #email-colaboradores {
@@ -350,6 +396,39 @@ Estilos sección planes
     background-image: linear-gradient(45deg,#7C31E8, #BC92F9);
     color: #fff;
     border: 0px;
+}
+
+#contenedor-proyectos, #contenedor-carpetas, #contenedor-compartidos-conmigo {
+    background-color: #fff;
+    font-family: system-ui;
+    color: #000;
+    width: 96%;
+    height: 650px;
+    padding: 30px;
+}
+
+#contenedor-opciones-ellipsis {
+    position: fixed;
+    width: 165px;
+    height: 120px;
+    padding: 10px;
+    background-color: #fff;
+    font-family: system-ui;
+    margin-top: -523px;
+    margin-left: 84%;
+    border: 0.5px solid;
+    border-radius: 10px 0px 10px 10px;
+}
+
+.divs-ellipsis {
+    margin-left: auto;
+    font-size: 1.4rem;
+}
+
+.div-mis-proyectos {
+    position: fixed;
+    display: flex;
+    margin-left: 660px;
 }
 
 .div-menu-usuario {
@@ -799,7 +878,7 @@ input::placeholder{
 }
 
 #seccion-comprar-plan, #seccion-comprar-plan-2 {
-    top: -597px;
+    top: -1195px;
     color: #fff;
     height: 1128px;
     /* display: none; */
